@@ -60,15 +60,19 @@
     max-width: 60px;
 }
 
+.perguntas {
+    background-color: #F4F4F4;
+    font-weight: 700;
+}
 
-
-
-
-
+.perguntas:hover {
+    color: var(--cor-premium);
+}
 
 
 .passo-a-passo {
     background-color: #F4F4F4;
+    padding-bottom: 80px;
 }
 
 .passo-a-passo-container {
