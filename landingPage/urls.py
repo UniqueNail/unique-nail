@@ -1,0 +1,16 @@
+from django.urls import path
+
+from . import views
+
+urlpatterns = [
+    path('', views.index, name='index'),
+    path('sobre', views.sobre, name='sobre'),
+    path('geis', views.geis, name='geis'),
+    path('gelBase', views.gelBase, name='gelBase'),
+    path('gelClear', views.gelClear, name='gelClear'),
+    path('gelCover', views.gelCover, name='gelCover'),
+    path('gelNude', views.gelNude, name='gelNude'),
+    path('gelPink', views.gelPink, name='gelPink'),
+    path('gelPinkNude', views.gelPinkNude, name='gelPinkNude'),
+    path('gelWhite', views.gelWhite, name='gelWhite'),
+]

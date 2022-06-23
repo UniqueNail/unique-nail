@@ -1,0 +1,108 @@
+*
+.background-modal-1 {
+    background-image: url(/static/img/Produtos/top-coat-block.png);
+    background-repeat: no-repeat;
+    background-position-x: 400px;
+    background-position-y: 170px;
+    background-color: var(--preto);
+    color: #fff;
+}
+
+.background-modal-2 {
+    background-image: url(/static/img/Produtos/ph-bonder-block.png);
+    background-repeat: no-repeat;
+    background-position-x: 400px;
+    background-position-y: 170px;
+    background-color: var(--preto);
+    color: #fff;
+}
+
+.background-modal-3 {
+    background-image: url(/static/img/Produtos/primer-acido-block.png);
+    background-repeat: no-repeat;
+    background-position-x: 400px;
+    background-position-y: 200px;
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+.background-modal-4 {
+    background-image: url(/static/img/Produtos/primer-adesivador-block.png);
+    background-repeat: no-repeat;
+    background-position-x: 400px;
+    background-position-y: 180px;
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+.background-modal-5 {
+    background-image: url(/static/img/Produtos/cleanser-block.png);
+    background-repeat: no-repeat;
+    background-position-x: 400px;
+    background-position-y: 14px;
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+.background-modal-6 {
+    background-image: url(/static/img/Produtos/prep-block.png);
+    background-repeat: no-repeat;
+    background-position-x: 400px;
+    background-position-y: 14px;
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+.background-modal-7 {
+    background-image: url(/static/img/Produtos/clear-block.png);
+    background-repeat: no-repeat;
+    background-position-x: 300px;
+    background-position-y: 65px;
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+.background-modal-8 {
+    background-image: url(/static/img/Produtos/pink-block.png);
+    background-repeat: no-repeat;
+    background-position-x: 300px;
+    background-position-y: 140px;
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+.background-modal-9 {
+    background-image: url(/static/img/Produtos/cover-block.png);
+    background-repeat: no-repeat;
+    background-position-x: 300px;
+    background-position-y: 140px;
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+.background-modal-10 {
+    background-image: url(/static/img/Produtos/strong-pink-block.png);
+    background-repeat: no-repeat;
+    background-position-x: 300px;
+    background-position-y: 140px;
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+.background-modal-11 {
+    background-image: url(/static/img/Produtos/strong-branco-block.png);
+    background-repeat: no-repeat;
+    background-position-x: 300px;
+    background-position-y: 140px;
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+.background-modal-12 {
+    background-image: url(/static/img/Produtos/strong-safira-block.png);
+    background-repeat: no-repeat;
+    background-position-x: 300px;
+    background-position-y: 140px;
+    background-color: var(--preto);
+    color: var(--branco);
+}

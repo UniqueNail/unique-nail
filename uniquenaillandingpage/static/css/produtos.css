@@ -1,0 +1,198 @@
+*
+
+/* Página Geis */
+.inicio-geis {
+    background-color: #F4F4F4;
+}
+
+.inicio-geis h5 {
+    max-width: 750px;
+}
+
+.card-gel img {
+    width: 250px;
+    height: 250px;
+}
+
+.titulo-geis {
+    max-width: 200px;
+    font-size: 1rem;
+    color: var(--cor-premium);
+    text-transform: uppercase;
+}
+
+/* Página Gel e Geis */
+
+.geis-lista {
+    background-color: #F4F4F4;
+    padding-top: 80px;
+}
+
+.geis-descricao {
+    max-width: 1200px;
+}
+
+.linha-sep {
+    max-width: 1000px;
+}
+
+/* Página Gel */
+
+.titulo-gel {
+    color: var(--cor-premium);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.img-gel {
+    max-width: 357px;
+}
+
+.descricao-gel {
+    color: var(--preto);
+}
+
+.icones-redes-sociais {
+    max-width: 280px;
+}
+
+.icones-redes-sociais img {
+    max-width: 60px;
+}
+
+
+
+
+
+
+
+
+.passo-a-passo {
+    background-color: #F4F4F4;
+}
+
+.passo-a-passo-container {
+    max-width: 1020px;
+}
+
+.borda-fundo-vermelho {
+    background-color: var(--cor-premium);
+    width: 385px;
+    height: 403px;
+    border-radius: 5px 0 0 0;
+}
+
+.imagem-passo-1 {
+    background-color: #F4F4F4;
+    width: 355px;
+    height: 355px;
+    left: 30px;
+    top: 23px;
+    border-radius: 0 0 0 60px;
+}
+
+.imagem-passo-1 img {
+    max-height: 307px;
+    max-width: 200px;
+}
+
+.detalhe-fundo-vermelho {
+    background-color: var(--cor-premium);
+    width: 117px;
+    height: 119px;
+    border-radius: 5px 0 60px 0
+}
+
+.passoapasso-fundo-texto {
+    background-color: #fff;
+    width: 385px;
+    height: 403px;
+    border-bottom: 25px solid var(--cor-premium);
+}
+
+.passoapasso-fundo-texto p {
+    max-width: 356px;
+    color: var(--preto);
+    text-align: justify;
+}
+
+.numero-passoapasso {
+    bottom: 25px;
+    left: 46px;
+}
+
+.numero-passoapasso h1 {
+    color: var(--preto);
+    font-size: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.modo-de-usar {
+    background-color: #F4F4F4;
+}
+
+.modo-de-usar-descricao {
+    max-width: 1000px;
+    color: var(--preto);
+}
+
+.modo-de-usar-descricao p {
+    color: var(--preto);
+    padding-bottom: 100px;
+    text-align: justify;
+}
+
+
+@media (max-width: 1920px) {
+    /* .inicio-geis {
+        background-image: url(/static/img/geis/background-folhas-1920.gif);
+        background-position: center;
+        background-repeat: no-repeat;
+    } */
+}
+
+@media (max-width: 1000px) {
+    .titulo-geis {
+        margin-top: 30px !important;
+    }
+
+    .geis-imagem {
+        width: 100%;
+    }
+
+    .inicio-geis h5 {
+        font-size: 5vw;
+    }
+
+    .geis-lista h5 {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .img-gel {
+        width: 100%;
+    }
+
+    .imagem-passo-1 {
+        width: 100%;
+        left: 0px;
+        top: 23px;
+    }
+    
+}

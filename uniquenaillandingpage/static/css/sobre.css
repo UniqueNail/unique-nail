@@ -1,0 +1,37 @@
+*
+.inicio-sobre {
+    background-image: url(/static/img/sobre/background-sobre-kit.gif);
+    background-color: var(--branco);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.background-sobre-1 img{
+    margin-top: 100px;
+    width: 100%;
+}
+
+.logo-animada img {
+    width: 500px;
+}
+
+.nossa-historia {
+    max-width: 1000px;
+    text-indent: 50px;
+    text-align: justify;
+    padding-bottom: 100px;
+}
+
+.nossa-historia p {
+    color: var(--preto);
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+@media(max-width: 400px) {
+
+    .logo-animada img{
+        width: 100%;
+    } 
+}

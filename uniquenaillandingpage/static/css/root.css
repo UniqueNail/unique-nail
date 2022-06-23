@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --preto: #000000;
+    --branco: #ffffff;
+    --cor-secundaria: #f5d654;
+    --cor-premium: #993232; /* #701719 */
+    --cor-prata: radial-gradient(circle at 71.64% 87.48%, #cedad8 0, #c8cecc 25%, #c0c0c0 50%, #b8b3b4 75%, #b1b0b0 100%);
+    --fonte-primaria: "century", system-ui, -apple-system, Roboto, Ubuntu, sans-serif;
+}
+
+@font-face {
+    font-family:"century";
+    src: url("../fonts/century-gothic/Century Gothic.ttf");
+    font-style: normal;
+}
+
+html {
+    font-size: 16px;
+}
+
+a {
+    color: var(--branco);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+body {
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+h1 {
+    color: var(--cor-secundaria);
+    font-size: 3rem;
+    font-family: var(--fonte-primaria);
+}
+
+h2 {
+    color: var(--branco);
+    font-size: 2rem;
+    font-family: var(--fonte-primaria);
+}
+
+h3 {
+    color: var(--branco);
+    font-size: 1.25rem;
+    font-family: var(--fonte-primaria);
+}
+
+h4 {
+    color: var(--branco);
+    font-size: 1.5rem;
+    font-family: var(--fonte-primaria);
+}
+
+h5 {
+    color: var(--preto);
+    font-size: 2rem;
+    font-family: var(--fonte-primaria);
+}
+
+p {
+    color: var(--branco);
+    font-size: 1rem;
+    font-family: var(--fonte-primaria);
+}
+
+/*-------------------------------- Configuração para dispositivos pequenos -------------------------- */
+
+ @media (max-width: 700px){
+  
+    h1 {
+       font-size: 2rem;
+   }
+
+   h2 {
+       font-size: 1.5rem;
+   } 
+} 

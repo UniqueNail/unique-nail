@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+{% include 'partials/menu.html' %}
+
+	<main>
+
+		<!-- Background de divisão -->
+		<div class="background-sobre-1 d-flex justify-content-center ">
+			<img src="{% static '/img/sobre/background-sobre-1.gif' %}" alt="Emenda">
+		</div>
+
+		<!-- Inicio do Sobre Nós -->
+		<section class="inicio-sobre">
+			<div class="logo-animada d-flex justify-content-center">
+				<img src="{% static '/img/sobre/Logo-Animada-stop.gif' %}" alt="animação da logo unique nail">
+			</div>
+
+			<h1 class="text-center mt-5">Nossa História</h1>
+			<article class="nossa-historia m-auto px-3">
+				<p>Do sonho de um empreendedor nato e seu desejo em suprir a recorrente falta de produtos, no crescente e pujante mercado de unhas, nasce em Minas Gerais em 2014 a UNIQUE NAIL, uma empresa que tem em seu DNA a permanente preocupação com o negócio de seus clientes como um todo, desde a formação até o abastecimento constante de produtos da mais alta qualidade. Visando cumprir fielmente a este compromisso, buscou seus primeiros parceiros internacionais, e em regime de parceria com estas e outras nacionais, vem se consolidando como empresa referência no mercado Nail Care, justamente por estar permanentemente atenta às necessidades de seus clientes.</p>
+				<p>Com sua atuação responsável e atenta ao mercado, a UNIQUE NAIL vem ganhando respeito, proporcionando uma verdadeira plataforma de relacionamento onde através de atendimento diferenciado e um portfólio completo no segmento de unhas, os melhores profissionais do mercado podem se abastecer de tudo o que precisam para obterem absoluto sucesso em seus negócios, comprovando a qualidade e competência da empresa.</p>
+				<p>A UNIQUE NAIL, apresenta uma nova geração de produtos para unhas, como o Gel Builder, que é o primeiro gel Hipoalergênico de alta performance, que oferece excelente desempenho no trabalho dos profissionais de unha. Buscando atingir um público potencial, a UNIQUE NAIL, atua no mercado atacadista distribuidor, e através de sua rede de parceiros dispõe da logística adequada para atender de forma satisfatória seus clientes, construindo relações sólidas e duradouras, oferecendo um serviço diferenciado de fracionamento de produtos nail care, para melhor atender nossos parceiros dentro de suas reais necessidades.</p>
+				<p>É certificada para importação de produtos com exigência dos principais órgãos no Brasil, como Agência Nacional de Vigilância Sanitária (Anvisa), onde insere um projeto audacioso, dentro do Mercado Mundial trazendo o melhor em qualidade para as manicures do futuro, que se preocupam não somente com a beleza e resultado final de seu serviço, mas principalmente com a saúde de suas clientes.</p>
+				<p>Somos movidos pelos desafios.<br>
+					By Unique Nail </p>
+			</article>
+		</section>
+
+
+	</main>
+
+	{% include 'partials/footer.html' %}
+
+{% endblock %}

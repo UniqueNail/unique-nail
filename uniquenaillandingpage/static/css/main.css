@@ -1,0 +1,481 @@
+* .background {
+    background: url("../img/background.png") no-repeat;
+    background-color: var(--branco);
+    height: 2150px;
+    background-size: cover;
+    position: relative;
+}
+
+.introducao {
+    max-width: 1300px;
+    height: 800px;
+    padding-top: 150px;
+}
+
+.apresentacao {
+    max-width: 1200px;
+    border: solid 3px;
+    color: transparent;
+    position: relative;
+    top: 100px;
+}
+
+.apresentacao h1 {
+    position: relative;
+    margin-top: 80px;
+}
+
+.apresentacao h2 {
+    position: relative;
+    animation: desliza-direita 2s linear alternate;
+    max-width: 800px;
+    text-indent: 50px;
+    z-index: 1;
+}
+
+.apresentacao h3 {
+    position: relative;
+    max-width: 800px;
+    z-index: 1;
+}
+
+.botao1 {
+    animation: aparece 3s;
+}
+
+.cor-botao {
+    background-color: var(--cor-secundaria);
+    color: var(--preto);
+    border: none;
+}
+
+.cor-botao:hover {
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+.video1 {
+    position: absolute;
+    max-width: 600px;
+    max-height: 420px;
+    top: 60px;
+    right: 20px;
+    bottom: 10px;
+    animation: aparece 4s;
+    z-index: 0;
+}
+
+
+/* ----------------------------------- Estilizando a galeria --------------------------------------- */
+
+.galeria {
+    max-width: 1100px;
+}
+
+.linha-de-separacao {
+    margin-top: 150px;
+}
+
+.galeria-imagens img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.descricao-galeria {
+    text-align: justify;
+    text-indent: 50px;
+    max-width: 1050px;
+}
+
+.hovereffect {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+}
+
+.hovereffect .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transform: translate(460px, -100px) rotate(180deg);
+    -ms-transform: translate(460px, -100px) rotate(180deg);
+    transform: translate(460px, -100px) rotate(180deg);
+    -webkit-transition: all 0.5s 0.4s ease-in-out;
+    transition: all 0.8s 0.4s ease-in-out;
+}
+
+.hovereffect img {
+    display: block;
+    position: relative;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.hovereffect h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    margin-top: 50px;
+}
+
+.hovereffect a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #fff;
+    margin: 50px 0 0 0;
+    background-color: transparent;
+    -webkit-transform: translateY(-200px);
+    -ms-transform: translateY(-200px);
+    transform: translateY(-200px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.hovereffect a.info:hover {
+    box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect:hover .overlay {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    -webkit-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+}
+
+.hovereffect:hover h2 {
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.hovereffect:hover a.info {
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+.background-1 img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* --------------------------------- Estilizando o Kit de 8 produtos -------------------------------------- */
+
+.background-2 {
+    background: url("../img/background-2.png") no-repeat;
+    background-color: var(--branco);
+    height: 2000px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+.kit-8-produtos {
+    background-image: url(/static/img/Produtos/prateleiras-cortadas.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 534px;
+}
+
+.kit-8-posicao {
+    max-width: 800px;
+}
+
+.produtos-limpeza img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.produtos-10ml-geis img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.kit-info {
+    max-width: 900px;
+    margin-bottom: 200px;
+}
+
+.b-kit {
+    text-decoration: none;
+    border-radius: 43px;
+    font-size: 16px;
+    width: 130px;
+    height: 40px;
+}
+
+.linha-geis {
+    margin-top: 100px;
+}
+
+.linha-geis-prateleira {
+    background-image: url(/static/img/Produtos/prateleiras-geis.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 462px;
+}
+
+.produtos-geis img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+
+/* ------------------------------------ Ajuste das Animações do CSS ---------------------------------------- */
+
+@keyframes desliza-direita {
+    0% {
+        opacity: 0;
+        left: -300px;
+        top: 0px;
+    }
+
+    50% {
+        opacity: 0;
+        left: -100px;
+        top: 0px;
+    }
+
+    100% {
+        opacity: 1;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@keyframes desliza-baixo {
+    0% {
+        opacity: 0;
+        left: 0px;
+        top: 300px;
+    }
+
+    50% {
+        opacity: 0;
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        opacity: 1;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@keyframes aparece {
+    0% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+
+/* --------------------------------- Ajustes para dispositivos médios -------------------------------------- */
+
+@media (max-width: 1080px) {
+    .background {
+        height: 2600px;
+    }
+
+    .introducao {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 1000px;
+    }
+
+    .apresentacao {
+        margin: 5px;
+        top: 10px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: justify;
+        max-width: 100%;
+    }
+
+    .apresentacao h1 {
+        width: 100%;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .titulo1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .botao1 {
+        position: relative;
+        margin-left: 85px;
+        margin-right: 85px;
+    }
+
+    .video1 {
+        display: flex;
+        position: relative;
+        right: 0;
+        top: 100px;
+    }
+
+    .linha-de-separacao img {
+        width: 100%;
+    }
+
+    .background-2 {
+        height: 2300px;
+    }
+
+    .kit-info h5 {
+        text-align: center;
+    }
+
+    .parallax-2 {
+        height: 1150px;
+    }
+}
+
+
+/* --------------------------------- Ajustes para dispositivos pequenos------------------------------------ */
+
+@media (max-width: 700px) {
+    .background {
+        height: 3750px;
+    }
+
+    .introducao {
+        padding-top: 100px;
+    }
+
+    .background-2 {
+        height: 2700px;
+    }
+
+    .kit-8-produtos {
+        background-image: url(/static/img/Produtos/prateleiras-cortadas-peq.png);
+        height: 995px;
+    }
+
+    .produtos-limpeza img {
+        padding-left: 0 !important;
+    }
+
+    .produtos-10ml-geis {
+        padding: 0 !important;
+        margin-top: 0 !important;
+    }
+
+    .produtos-10ml-geis img {
+        margin-top: 50px;
+    }
+
+    .produtos-geis img {
+        width: 157px;
+    }
+
+    .produtos-geis {
+        margin-top: 0 !important;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .linha-geis-prateleira {
+        background-image: url(/static/img/Produtos/prateleiras-geis-peq.png);
+        height: 632px;
+    }
+
+    .video1 iframe {
+        width: 100%;
+    }
+
+    .produtos-geis img {
+        margin-top: 50px;
+        padding: 0 !important;
+        padding-right: 3px !important;
+        padding-left: 3px !important;
+    }
+}

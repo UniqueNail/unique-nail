@@ -1,0 +1,45 @@
+	{% load static %}
+	
+	<!-- Inicio Navbar -->
+	<header>
+		<nav class="navbar fixed-top navbar-light navbar-expand-lg navbar-light nav-background" id="navbar">
+			<div class="container-fluid barra-de-menu">
+				<img class="logo" src="/static/img/logo-unique-dark.png" />
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end menu-items " id="navbarNav">
+					<ul class="navbar-nav links-do-menu">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="{% url 'index' %}">Inicio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="{% url 'sobre' %}">Sobre</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link teste-dropdown dropdown-toggle" id="navbarDropdownMenuLink" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false">Produtos</a>
+							<ul class="dropdown-menu lista-aberta" aria-labelledby="navbarDropdownMenuLink">
+								<li><a class="dropdown-item" href="{% url 'geis' %}">Géis</a></li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li><a class="dropdown-item" href="#">Limpeza</a></li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li><a class="dropdown-item" href="#">Selante | Primer</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contato</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Lojas</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>

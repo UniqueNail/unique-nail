@@ -1,0 +1,277 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+{% include 'partials/menu.html' %}
+
+<main>
+	<!-- -------------------- Background de divisão ---------------------- -->
+
+	<div class="background-sobre-1 d-flex justify-content-center ">
+		<img src="/static/img/geis/background-geis-1.gif" alt="Emenda">
+	</div>
+
+
+	<!-- ------------------------- Descrição do Gel ------------------------- -->
+
+	<section class="geis-lista">
+		<article class="geis-descricao container">
+			<h2 class="text-center mb-4 titulo-gel">Gel Base - Maior Aderência - 20g</h2>
+			<div class="row mt-5">
+				<div data-aos="fade-right" class="col-lg-6 col-md-12 d-flex justify-content-center">
+					<a href="{% url 'geis' %}"><img class="img-gel" src="{% static 'img/geis/gel-pink.gif' %}"
+							alt="Gel Unique Nail"></a>
+				</div>
+
+				<div class="col-lg-6 col-md-12 d-flex justify-content-center">
+					<ul class="descricao-gel">
+						<li>Gel de Alta Resistência, utilizado para camada base em alongamento.</li>
+						<li>Age como barreira, evitando manchas na unha natural;</li>
+						<li>Fácil Aplicação com viscosidade semiliquida;</li>
+						<li>Autonivelante;</li>
+						<li>Seca em cabine LED/UV</li>
+						<li>Textura Flexível, não rompe facilmente;</li>
+						<li>Alta Resistência e Aderência entre a unha natural e o gel;</li>
+						<li>Evita descolamento e Infiltrações;</li>
+						<li>Seca em Cabine LED/UV 30 Segundos;</li>
+						<li>N° Processo Anvisa: 25351.298662/2021-93</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="icones-redes-sociais m-auto mt-5 d-flex justify-content-center">
+				<a href="https://www.instagram.com/uniquenail.oficial/"><img class="px-2 w-100"
+						src="{% static '/img/Produtos/icone-instagram.png' %}"></img></a>
+
+				<a href="#"><img class="px-2 w-100" src="{% static '/img/Produtos/icone-facebook.png' %}"></img></a>
+
+				<a href="#"><img class="px-2 w-100" src="{% static '/img/Produtos/icone-whatsapp.png' %}"></img></a>
+
+				<a href="#"><img class="px-2 w-100" src="{% static '/img/Produtos/icone-youtube.png' %}"></img></a>
+			</div>
+		</article>
+	</section>
+
+
+	<!-- --------------------------- Passo a Passo ----------------------------- -->
+
+	<section class="passo-a-passo pt-5">
+		<h2 class="titulo-gel text-center pt-5 mb-4 titulo-gel">PASSO A PASSO</h2>
+		<div id="carouselExampleControls" class="carousel slide carousel-dark" data-bs-ride="carousel">
+			<div class="carousel-inner passo-a-passo-container m-auto">
+				
+				<!-- Passo 1 -->
+				<div class="carousel-item active" data-bs-interval="8000">
+					<div class="d-block justify-content-center d-flex flex-wrap">
+						<div class="borda-fundo-vermelho position-relative ">
+							<div class="imagem-passo-1 position-absolute d-flex justify-content-center align-items-center">
+								<img src="{% static 'img/Produtos/prep-block.png' %}" alt="Prep Unique Nail">
+							</div>
+							<div class="detalhe-fundo-vermelho position-absolute">
+								<div class="position-relative">
+									<img src="{% static '/img/geis/detalhe-passoapasso.png' %}">
+									<div class="position-absolute numero-passoapasso">
+										<h1>1</h1>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="passoapasso-fundo-texto p-2 d-flex justify-content-center align-items-center">
+							<ul><li>Usar o Nail Prep Unique Nail antes de iniciar o processo.</li></ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- Passo 2 -->
+				<div class="carousel-item" data-bs-interval="8000">
+					<div class="d-block justify-content-center d-flex flex-wrap">
+						<div class="borda-fundo-vermelho position-relative ">
+							<div class="imagem-passo-1 position-absolute d-flex justify-content-center align-items-center">
+								<img src="{% static 'img/Produtos/primer-acido-block.png' %}">
+							</div>
+							<div class="detalhe-fundo-vermelho position-absolute">
+								<div class="position-relative">
+									<img src="{% static '/img/geis/detalhe-passoapasso.png' %}">
+									<div class="position-absolute numero-passoapasso">
+										<h1>2</h1>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="passoapasso-fundo-texto p-2 d-flex justify-content-center align-items-center">
+							<ul><li>Aplicar o Primer Ácido Unique Nail com o pincel sem excesso, não pode tocar a cutícula e a pele.</li></ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- Passo 3 -->
+				<div class="carousel-item" data-bs-interval="8000">
+					<div class="d-block justify-content-center d-flex flex-wrap">
+						<div class="borda-fundo-vermelho position-relative ">
+							<div class="imagem-passo-1 position-absolute d-flex justify-content-center align-items-center">
+								<img src="{% static '/img/Produtos/primer-adesivador-block.png' %}">
+							</div>
+							<div class="detalhe-fundo-vermelho position-absolute">
+								<div class="position-relative">
+									<img src="{% static '/img/geis/detalhe-passoapasso.png' %}">
+									<div class="position-absolute numero-passoapasso">
+										<h1>3</h1>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="passoapasso-fundo-texto p-2 d-flex justify-content-center align-items-center">
+							<ul><li>Aplicar o Primer Adesivador Unique Nail com o pincel sem excesso, não pode tocar a cutícula e a pele.</li></ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- Passo 4 -->
+				<div class="carousel-item" data-bs-interval="8000">
+					<div class="d-block justify-content-center d-flex flex-wrap">
+						<div class="borda-fundo-vermelho position-relative ">
+							<div
+								class="imagem-passo-1 position-absolute d-flex justify-content-center align-items-center">
+								<img src="{% static 'img/geis/gel-pink.gif' %}">
+							</div>
+							<div class="detalhe-fundo-vermelho position-absolute">
+								<div class="position-relative">
+									<img src="{% static '/img/geis/detalhe-passoapasso.png' %}">
+									<div class="position-absolute numero-passoapasso">
+										<h1>4</h1>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="passoapasso-fundo-texto p-2 d-flex justify-content-center align-items-center">
+							<ul><li>Aplicar uma pequena quantidade do GEL BUILDER nas unhas naturais e espalhar com o pincel para
+                                unhas em gel.</li></ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- Passo 5 -->
+				<div class="carousel-item" data-bs-interval="8000">
+					<div class="d-block justify-content-center d-flex flex-wrap">
+						<div class="borda-fundo-vermelho position-relative ">
+							<div
+								class="imagem-passo-1 position-absolute d-flex justify-content-center align-items-center">
+								<img src="{% static 'img/geis/gel-pink.gif' %}">
+							</div>
+							<div class="detalhe-fundo-vermelho position-absolute">
+								<div class="position-relative">
+									<img src="{% static '/img/geis/detalhe-passoapasso.png' %}">
+									<div class="position-absolute numero-passoapasso">
+										<h1>5</h1>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="passoapasso-fundo-texto p-2 d-flex justify-content-center align-items-center">
+							<ul>
+                                <li>Secar nas Cabines:
+                                    <ul>
+                                        <li>LED/UV (durante 60 segundos),</li>
+                                        <li>LED (durante 90 segundos),</li>
+                                        <li>UV (durante 120 segundos).</li>
+                                    </ul>
+                                </li>
+                            </ul>
+						</div>
+					</div>
+				</div>
+
+                <!-- Passo 6 -->
+				<div class="carousel-item" data-bs-interval="8000">
+					<div class="d-block justify-content-center d-flex flex-wrap">
+						<div class="borda-fundo-vermelho position-relative ">
+							<div
+								class="imagem-passo-1 position-absolute d-flex justify-content-center align-items-center">
+								<img src="{% static 'img/Produtos/cleanser-block.png' %}">
+							</div>
+							<div class="detalhe-fundo-vermelho position-absolute">
+								<div class="position-relative">
+									<img src="{% static '/img/geis/detalhe-passoapasso.png' %}">
+									<div class="position-absolute numero-passoapasso">
+										<h1>6</h1>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="passoapasso-fundo-texto p-2 d-flex justify-content-center align-items-center">
+							<ul><li>Limpar os resíduos com o Cleanser e algodão prensado.</li></ul>
+						</div>
+					</div>
+				</div>
+
+                <!-- Passo 7 -->
+				<div class="carousel-item" data-bs-interval="8000">
+					<div class="d-block justify-content-center d-flex flex-wrap">
+						<div class="borda-fundo-vermelho position-relative ">
+							<div
+								class="imagem-passo-1 position-absolute d-flex justify-content-center align-items-center">
+								<img src="{% static 'img/Produtos/top-coat-block.png' %}">
+							</div>
+							<div class="detalhe-fundo-vermelho position-absolute">
+								<div class="position-relative">
+									<img src="{% static '/img/geis/detalhe-passoapasso.png' %}">
+									<div class="position-absolute numero-passoapasso">
+										<h1>7</h1>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="passoapasso-fundo-texto p-2 d-flex justify-content-center align-items-center">
+							<ul><li>Usar o Top Coat ao final do processo.</li></ul>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+				data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+				data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+
+	</section>
+
+
+	<!-- ------------------------------ Precauções -------------------------- -->
+
+	<section class="modo-de-usar">
+		<article class="modo-de-usar-descricao m-auto">
+			<div class="linha-sep m-auto pt-5">
+				<img class="w-100" src="/static/img/geis/linha-gel-icone.png"
+					alt="Ícone de separação de conteúdo com gel">
+			</div>
+			<h1 class="mt-4 mb-3 ps-3">Precauções:</h1>
+			<p class="mb-0 px-3">
+                Mantenha a embalagem fechada após o uso.
+				Faça a prova de toque: Aplique uma pequena quantidade no antebraço e observe se não ocorrerá nenhum tipo
+				de sensibilização. Não aplicar sobre a pele irritada ou lesionada. Em caso de contato com os olhos,
+				lavar com água em abundância. Suspender o uso em caso de irritação. Manusear em local arejado e manter
+				lonje do calor e do fogo (não armazenar em temperatura acima de 40°C). Manter fora do alcance de
+				crianças e animais domésticos.
+			</p>
+		</article>
+	</section>
+</main>
+
+{% include 'partials/footer.html' %}
+
+{% endblock %}

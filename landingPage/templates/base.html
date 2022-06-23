@@ -1,0 +1,62 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Unique Nail</title>
+
+	<!-- CSS Bootstrap -->
+	<link rel="stylesheet" href="{% static '/css/bootstrap.min.css' %}">
+
+	<!-- CSS Root -->
+	<link rel="stylesheet" href="{% static '/css/root.css' %}">
+
+	<!-- CSS Header -->
+	<link rel="stylesheet" href="{% static '/css/header.css' %}">
+
+	<!-- CSS Main -->
+	<link rel="stylesheet" href="{% static '/css/main.css' %}">
+
+	<!-- CSS Footer -->
+	<link rel="stylesheet" href="{% static '/css/footer.css' %}">
+
+	<!-- CSS Sobre -->
+	<link rel="stylesheet" href="{% static '/css/sobre.css' %}">
+
+    <!-- CSS Produtos -->
+	<link rel="stylesheet" href="{% static '/css/produtos.css' %}">
+
+	<!-- CSS Modal -->
+	<link rel="stylesheet" href="{% static '/css/modal.css' %}">
+
+	<!-- CSS Animações -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    {% block content %} {% endblock %}
+
+	<!-- Bootstrap JavaScript -->
+	<script src="{% static '/js/bootstrap.bundle.min.js' %}"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+		integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+		crossorigin="anonymous"></script>
+
+
+	<script src="{% static '/js/start.js' %}"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			duration: 1200,
+		});
+	</script>
+
+</body>
+
+</html>
