@@ -9,6 +9,13 @@
     max-width: 750px;
 }
 
+.card-gel {
+    background-color: var(--branco);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 1px;
+}
+
 .card-gel img {
     width: 200px;
     height: 200px;
@@ -156,7 +163,7 @@
 
 @media (max-width: 1000px) {
     .titulo-geis {
-        margin-top: 30px !important;
+        margin-top: 20px !important;
     }
 
     .geis-imagem {
