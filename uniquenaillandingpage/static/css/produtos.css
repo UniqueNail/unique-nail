@@ -10,13 +10,13 @@
 }
 
 .card-gel img {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
 }
 
 .titulo-geis {
     max-width: 200px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: var(--cor-premium);
     text-transform: uppercase;
 }
@@ -25,15 +25,15 @@
 
 .geis-lista {
     background-color: #F4F4F4;
-    padding-top: 80px;
+    padding-top: 50px;
 }
 
 .geis-descricao {
-    max-width: 1200px;
+    max-width: 1000px;
 }
 
 .linha-sep {
-    max-width: 1000px;
+    max-width: 1200px;
 }
 
 /* Página Gel */
@@ -130,22 +130,6 @@
     font-size: 40px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .modo-de-usar {
     background-color: #F4F4F4;
 }
@@ -180,15 +164,24 @@
     }
 
     .inicio-geis h5 {
+        font-size: 3vw;
+    }
+
+    .geis-lista h5 {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .inicio-geis h5 {
         font-size: 5vw;
     }
 
     .geis-lista h5 {
         font-size: 5vw;
     }
-}
 
-@media (max-width: 400px) {
     .img-gel {
         width: 100%;
     }
@@ -198,5 +191,15 @@
         left: 0px;
         top: 23px;
     }
+
+    .card-gel img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .titulo-geis {
+        max-width: 150px;
+    }
+    
     
 }
