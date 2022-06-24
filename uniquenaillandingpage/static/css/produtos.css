@@ -208,5 +208,44 @@
         max-width: 150px;
     }
     
+    /* ----------- Página Gel -------------- */
     
+    .borda-fundo-vermelho {
+        width: 320px;
+        height: 350px;
+    }
+    
+    .imagem-passo-1 {
+        width: 300px;
+        height: 300px;
+        left: 10px;
+        top: 25px;
+    }
+    
+    .imagem-passo-1 img {
+        max-height: 300px;
+        max-width: 200px;
+    }
+    
+    .detalhe-fundo-vermelho {
+        width: 100px;
+        height: 100px;
+        border-radius: 5px 0 60px 0
+    }
+
+    .detalhe-fundo-vermelho img {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .passoapasso-fundo-texto {
+        width: 320px;
+        height: 300px;
+        border-bottom: 25px solid var(--cor-premium);
+    }
+    
+    .numero-passoapasso {
+        bottom: 15px;
+        left: 34px;
+    }
 }
