@@ -1,8 +1,8 @@
 	{% load static %}
 	
 	<!-- Inicio Navbar -->
-	<header>
-		<nav class="navbar fixed-top navbar-light navbar-expand-lg navbar-light nav-background" id="navbar">
+	<header class="fixed-top">
+		<nav class="navbar navbar-light navbar-expand-lg navbar-light nav-background " id="navbar">
 			<div class="container-fluid barra-de-menu">
 				<img class="logo" src="/static/img/logo-unique-dark.png" />
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -25,7 +25,7 @@
 								<li>
 									<hr class="dropdown-divider">
 								</li>
-								<li><a class="dropdown-item" href="#">Limpeza</a></li>
+								<li><a class="dropdown-item" href="{% url 'higienizadores' %}">Higienizadores</a></li>
 								<li>
 									<hr class="dropdown-divider">
 								</li>

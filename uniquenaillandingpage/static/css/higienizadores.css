@@ -1,0 +1,41 @@
+*
+.paralaxe-prep {
+    background-image: url("../img/higienizadores/prep-art.jpg");
+    background-color: #f4f4f4;
+    min-height: 640px;
+    background-attachment: fixed;
+    background-position-x : center;
+    background-repeat: no-repeat;
+}
+
+.inicio-higienizadores {
+    background-color: #f4f4f4;
+}
+
+.abas-link{
+    text-transform: uppercase;
+    color: var(--preto);
+    font-weight: 600;
+}
+
+.abas-link:hover{
+    color: var(--cor-secundaria) !important;
+}
+
+.passo-a-passo-container a{
+    color: var(--preto);
+    font-weight: 800;
+}
+
+.passo-a-passo-container a:hover{
+    color: var(--cor-secundaria) !important;
+}
+
+@media (max-width: 1000px) {
+
+    .mini-prep {
+        text-align: center;
+    }
+
+}
+

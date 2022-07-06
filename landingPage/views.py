@@ -6,6 +6,7 @@ def index(request):
 def sobre(request):
     return render(request,'sobre.html')
 
+# Géis
 def geis(request):
     return render(request,'geis.html')
 
@@ -32,3 +33,11 @@ def gelPinkNude(request):
 
 def gelWhite(request):
     return render(request,'geis/gelWhite.html')
+
+#Higienizadores
+def higienizadores(request):
+    return render(request, 'higienizadores.html')
+
+#Blindagem
+def blindagem(request):
+    return render(request, 'blindagem.html')
