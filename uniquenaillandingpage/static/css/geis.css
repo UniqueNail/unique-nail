@@ -9,12 +9,12 @@
     max-width: 750px;
 }
 
-.card-gel {
+/* .card-gel {
     background-color: var(--branco);
     padding: 10px;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 1px;
-}
+} */
 
 .card-gel img {
     width: 200px;
@@ -33,6 +33,7 @@
 .geis-lista {
     background-color: #F4F4F4;
     padding-top: 50px;
+    
 }
 
 .geis-descricao {

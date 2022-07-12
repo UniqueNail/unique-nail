@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+{% include 'partials/menu.html' %}
+
+
+<main class="blindagem-corpo">
+
+    <!-- ---------------------- Paralaxee prep --------------------------- -->
+    <div class="paralaxe-blind">
+        <div class="inicio-blind">
+            <h1 class="titulo-blind-principal">Adesão, proteção e fortalecimento das unhas.</h1>
+        </div>
+    </div>
+
+
+    <!-- -------------------------- Cards -------------------------------- -->
+    <section class="cards-blindagem m-auto py-4">
+        
+        <!-- ---------------------- Card 1 ------------------------------- -->
+        <div class="card-b">
+            <h6 class="titulo-blind">PH Bonder - 10ml</h6>
+            <img class="blindagem-img" src="{% static 'img/blindagem/phbonder-shadow.png' %}" alt="PH Bonder Unique Nail">
+            <a><img class="icone-mais" src="{% static 'img/blindagem/icone-mais.png' %}" alt="Ícone de mais"></a>
+        </div>
+
+        <!-- ---------------------- Card 2 ------------------------------- -->
+        <div class="card-b">
+            <h6 class="titulo-blind">Primer Adesivador - 10ml</h6>
+            <img class="blindagem-img" src="{% static 'img/blindagem/primeradesivador-shadow.png' %}" alt="Pimer Adesivador Unique Nail">
+            <a><img class="icone-mais" src="{% static 'img/blindagem/icone-mais.png' %}" alt="Ícone de mais"></a>
+        </div>
+
+        <!-- ---------------------- Card 3 ------------------------------- -->
+        <div class="card-b">
+            <h6 class="titulo-blind">Primer Ácido - 10ml</h6>
+            <img class="blindagem-img" src="{% static 'img/blindagem/primeracido-shadow.png' %}" alt="Primer Ácido Unique Nail">
+            <a><img class="icone-mais" src="{% static 'img/blindagem/icone-mais.png' %}" alt="Ícone de mais"></a>
+        </div>
+
+        <!-- ---------------------- Card 4 ------------------------------- -->
+        <div class="card-b">
+            <h6 class="titulo-blind">Top Coat - 10ml</h6>
+            <img class="blindagem-img" src="{% static 'img/blindagem/topcoat-shadow.png' %}" alt="Top Coat Unique Nail">
+            <a><img class="icone-mais" src="{% static 'img/blindagem/icone-mais.png' %}" alt="Ícone de mais"></a>
+        </div>
+
+        <!-- ---------------------- Card 5 ------------------------------- -->
+        <!-- <div class="card-b">
+            <h6 class="titulo-blind">Óleo Hidratante - 10ml</h6>
+            <img class="blindagem-img" src="{% static 'img/blindagem/essencialaranja-shadow.png' %}" alt="Óleo Hidratante Unique Nail">
+            <a><img class="icone-mais" src="{% static 'img/blindagem/icone-mais.png' %}" alt="Ícone de mais"></a>
+        </div> -->
+    </section>
+
+</main>
+
+{% include 'partials/footer.html' %}
+
+{% endblock %}
