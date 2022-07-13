@@ -1,0 +1,233 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+{% include 'partials/menu.html' %}
+
+<main>
+	<!-- -------------------- Background de divisão ---------------------- -->
+
+	<div class="background-sobre-1 d-flex justify-content-center ">
+		<img src="/static/img/geis/background-geis-1.gif" alt="Emenda">
+	</div>
+
+
+	<!-- ------------------------- Descrição do Gel ------------------------- -->
+
+	<section class="geis-lista">
+		<article class="geis-descricao container">
+			<h2 class="text-center mb-4 titulo-gel">Unique Nail - Remov Gel+ 100ml</h2>
+			<div class="row mt-5">
+				<div data-aos="fade-right" class="col-lg-6 col-md-12 d-flex justify-content-center">
+					<img class="img-gel" src="{% static 'img/remov/remov.png' %}" alt="Removedor Unique Nail"></a>
+				</div>
+
+				<div class="col-lg-6 col-md-12 d-flex justify-content-center">
+					<ul class="descricao-gel pt-5">
+						<li>Removedor de Unha em Gel, Acrigel e Esmalte em gel;</li>
+						<li>A base de acetona;</li>
+						<li>Amolece o gel para melhor retirada;</li>
+						<li>Nº Processo Anvisa: 25351.703455/2019-40</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="icones-redes-sociais m-auto mt-5 d-flex justify-content-center">
+				<a href="https://www.instagram.com/uniquenail.oficial/"><img class="px-2 w-100"
+						src="{% static '/img/Produtos/icone-instagram.png' %}"></img></a>
+
+				<a href="#"><img class="px-2 w-100" src="{% static '/img/Produtos/icone-facebook.png' %}"></img></a>
+
+				<a href="#"><img class="px-2 w-100" src="{% static '/img/Produtos/icone-whatsapp.png' %}"></img></a>
+
+				<a href="#"><img class="px-2 w-100" src="{% static '/img/Produtos/icone-youtube.png' %}"></img></a>
+			</div>
+		</article>
+	</section>
+
+
+	<!-- --------------------------- Passo a Passo ----------------------------- -->
+
+	<section class="passo-a-passo pt-5 pb-3">
+		<article class="modo-de-usar-descricao m-auto px-3">
+			<h2 class="titulo-gel pt-5 mb-4">PASSO A PASSO</h2>
+			<ol>
+				<li>Retirar de 20% a 30% do gel, com uma lixa elétrica;</li>
+				<li>Embeber o algodão com o Remov Gel +, colocar sobre o alongamento;</li>
+				<li>Envolver o dedo com papel alumínio novo;</li>
+				<li>Não usar papel alumínio que já tenha sido usado e nem reutilizar o mesmo, sempre usar papel alumínio
+					novo.</li>
+				<li>Deixar agir por 30 minutos, para géis HARD deixar 40 minutos e retirar empurrando com uma espátula
+					de inox;</li>
+			</ol>
+			<p class="p-0">OBS:</p>
+			<ul>
+				<li>É expressamente proibido fazer o uso de cabines para acelerar o processo do produto, tem que
+					deixar o produto agir naturalmente por 30 minutos.</li>
+				<li>NÃO remove alongamento de fibra.</li>
+			</ul>
+		</article>
+
+	</section>
+
+
+	<!-- ------------------------------ Precauções -------------------------- -->
+
+	<section class="modo-de-usar">
+		<article class="modo-de-usar-descricao m-auto">
+			<div class="linha-sep m-auto">
+				<img class="w-100" src="/static/img/geis/linha-gel-icone.png"
+					alt="Ícone de separação de conteúdo com gel">
+			</div>
+			<h2 class="pt-4 mb-3 ps-3 titulo-gel">Precauções:</h2>
+			<p class="mb-0 px-3">
+				Mantenha a embalagem fechada após o uso.
+				Faça a prova de toque: Aplique uma pequena quantidade no antebraço e observe se não ocorrerá nenhum tipo
+				de sensibilização. Não aplicar sobre a pele irritada ou lesionada. Em caso de contato com os olhos,
+				lavar com água em abundância. Suspender o uso em caso de irritação. Manusear em local arejado e manter
+				lonje do calor e do fogo (não armazenar em temperatura acima de 40°C). Manter fora do alcance de
+				crianças e animais domésticos.
+			</p>
+		</article>
+	</section>
+
+	<!-- --------------------------- Perguntas Frequentes ------------------------- -->
+	<section class="modo-de-usar">
+		<article class="modo-de-usar-descricao m-auto">
+			<div class="linha-sep m-auto">
+				<img class="w-100" src="/static/img/geis/linha-gel-icone.png"
+					alt="Ícone de separação de conteúdo com gel">
+			</div>
+			<h2 class="mt-4 mb-3 ps-3 titulo-gel">Perguntas Frequentes:</h2>
+			<div class="accordion accordion-flush pb-5" id="accordionFlushExample">
+
+				<!-- Pergunta 1 -->
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="flush-headingOne">
+						<button class="accordion-button collapsed perguntas" type="button" data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+							Posso passar esse gel só para mudar o tom de cor das unhas?
+						</button>
+					</h2>
+					<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+						data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body">Placeholder content for this accordion, which is intended to
+							demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion
+							body.</div>
+					</div>
+				</div>
+
+				<!-- Pergunta 2 -->
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="flush-headingTwo">
+						<button class="accordion-button collapsed perguntas" type="button" data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+							Qual o melhor gel para fazer a estrutura da unha?
+						</button>
+					</h2>
+					<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+						data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body">Placeholder content for this accordion, which is intended to
+							demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion
+							body. Let's imagine this being filled with some actual content.</div>
+					</div>
+				</div>
+
+				<!-- Pergunta 3 -->
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="flush-headingThree">
+						<button class="accordion-button collapsed perguntas" type="button" data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseThree" aria-expanded="false"
+							aria-controls="flush-collapseThree">
+							Qual o tempo de secagem do Gel?
+						</button>
+					</h2>
+					<div id="flush-collapseThree" class="accordion-collapse collapse"
+						aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body">O Gel Builder leva cerca de 60 segundos em cabine LED/UV para secar,
+							para se certificar faça a prova de toque.</div>
+					</div>
+				</div>
+
+				<!-- Pergunta 4 -->
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="flush-headingFive">
+						<button class="accordion-button collapsed perguntas" type="button" data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseFive" aria-expanded="false"
+							aria-controls="flush-collapseFive">
+							Qual a quantidade devo usar por camada?
+						</button>
+					</h2>
+					<div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+						data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body">Placeholder content for this accordion, which is intended to
+							demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
+							body. Nothing more exciting happening here in terms of content, but just filling up the
+							space to make it look, at least at first glance, a bit more representative of how this would
+							look in a real-world application.</div>
+					</div>
+				</div>
+
+				<!-- Pergunta 5 -->
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="flush-headingSix">
+						<button class="accordion-button collapsed perguntas" type="button" data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+							Se deixar o gel por muito tempo na unha, ele pode trazer algum malefício?
+						</button>
+					</h2>
+					<div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
+						data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body">Placeholder content for this accordion, which is intended to
+							demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
+							body. Nothing more exciting happening here in terms of content, but just filling up the
+							space to make it look, at least at first glance, a bit more representative of how this would
+							look in a real-world application.</div>
+					</div>
+				</div>
+
+				<!-- Pergunta 6 -->
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="flush-headingSeven">
+						<button class="accordion-button collapsed perguntas" type="button" data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseSeven" aria-expanded="false"
+							aria-controls="flush-collapseSeven">
+							Com esse gel eu consigo fazer o esqueleto inicial da unha?
+						</button>
+					</h2>
+					<div id="flush-collapseSeven" class="accordion-collapse collapse"
+						aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body">Placeholder content for this accordion, which is intended to
+							demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
+							body. Nothing more exciting happening here in terms of content, but just filling up the
+							space to make it look, at least at first glance, a bit more representative of how this would
+							look in a real-world application.</div>
+					</div>
+				</div>
+
+				<!-- Pergunta 7 -->
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="flush-headingEight">
+						<button class="accordion-button collapsed perguntas" type="button" data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseEight" aria-expanded="false"
+							aria-controls="flush-collapseEight">
+							Como faço para remover esse Gel? Quais produtos posso passar?
+						</button>
+					</h2>
+					<div id="flush-collapseEight" class="accordion-collapse collapse"
+						aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body">Placeholder content for this accordion, which is intended to
+							demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
+							body. Nothing more exciting happening here in terms of content, but just filling up the
+							space to make it look, at least at first glance, a bit more representative of how this would
+							look in a real-world application.</div>
+					</div>
+				</div>
+			</div>
+		</article>
+	</section>
+</main>
+
+{% include 'partials/footer.html' %}
+
+{% endblock %}

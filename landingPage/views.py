@@ -6,6 +6,7 @@ def index(request):
 def sobre(request):
     return render(request,'sobre.html')
 
+
 # Géis
 def geis(request):
     return render(request,'geis.html')
@@ -34,10 +35,33 @@ def gelPinkNude(request):
 def gelWhite(request):
     return render(request,'geis/gelWhite.html')
 
+
 #Higienizadores
 def higienizadores(request):
     return render(request, 'higienizadores.html')
 
+
 #Blindagem
 def blindagem(request):
     return render(request, 'blindagem.html')
+
+def phBonder(request):
+    return render(request, 'blindagem/phBonder.html')
+
+def primerAdesivador(request):
+    return render(request, 'blindagem/primerAdesivador.html')
+
+def primerAcido(request):
+    return render(request, 'blindagem/primerAcido.html')
+
+def topCoat(request):
+    return render(request, 'blindagem/topCoat.html')
+
+
+#Removedor
+def remov(request):
+    return render(request, 'remov.html')
+
+#Acrílico
+def monomer(request):
+    return render(request, 'monomer.html')
