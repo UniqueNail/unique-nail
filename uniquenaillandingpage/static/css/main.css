@@ -54,7 +54,7 @@
     color: var(--branco);
 }
 
-.video1 {
+.sede-unique {
     position: absolute;
     max-width: 600px;
     max-height: 420px;
@@ -193,8 +193,6 @@
     background-size: cover;
     background-attachment: fixed;
 }
-
-
 
 .kit-8-produtos {
     background-image: url(/static/img/Produtos/prateleiras-cortadas.png);
@@ -393,7 +391,7 @@
         margin-right: 85px;
     }
 
-    .video1 {
+    .sede-unique {
         display: flex;
         position: relative;
         right: 0;
@@ -422,11 +420,16 @@
 
 @media (max-width: 700px) {
     .background {
-        height: 3550px;
+        height: 2300px;
     }
 
     .introducao {
         padding-top: 100px;
+    }
+
+    .img-responsive {
+        width: 250px !important;
+        height: 250px !important;
     }
 
     .background-2 {
@@ -463,13 +466,22 @@
 
 @media (max-width: 500px) {
 
+    .background {
+        height: 2000px;
+    }
+
     .linha-geis-prateleira {
         background-image: url(/static/img/Produtos/prateleiras-geis-peq.png);
         height: 632px;
     }
 
-    .video1 iframe {
-        width: 100%;
+    .sede-unique-retrato {
+        height: 100%;
+    }
+
+    .img-responsive {
+        width: 175px !important;
+        height: 175px !important;
     }
 
     .produtos-geis img {
@@ -481,5 +493,11 @@
 
     .background-2 {
         height: 3000px;
+    }
+}
+
+@media (max-width: 375px) {
+    .background {
+        height: 2500px;
     }
 }
