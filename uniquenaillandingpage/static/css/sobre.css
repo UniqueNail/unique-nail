@@ -1,6 +1,6 @@
 *
-.inicio-sobre {
-    background-image: url(/static/img/sobre/background-sobre-kit.gif);
+.sobre-nos {
+    background-image: url(/static/img/sobre/background-sobre-kit.webp);
     background-color: var(--branco);
     background-size: cover;
     background-attachment: fixed;
@@ -13,6 +13,7 @@
 }
 
 .logo-animada img {
+    margin-top: 100px;
     width: 500px;
 }
 
@@ -20,7 +21,6 @@
     max-width: 1000px;
     text-indent: 50px;
     text-align: justify;
-    padding-bottom: 100px;
 }
 
 .nossa-historia p {
@@ -30,9 +30,65 @@
     font-weight: 500;
 }
 
-@media(max-width: 400px) {
+
+/* --------------------- Organograma ----------------------- */
+.organograma {
+    max-width: 800px ;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    gap: 100px
+}
+
+.card-organograma {
+    width: 200px;
+    height: 240px;
+    background-color: var(--branco);
+    border-radius: 10px;
+}
+
+.card-organograma img {
+    max-width: 200px;
+}
+
+.titulo-organograma{
+    font-size: 0.9rem;
+    color: var(--cor-premium);
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.nome-organograma {
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+
+
+@media(max-width: 430px) {
 
     .logo-animada img{
         width: 100%;
     } 
+
+    .nossa-historia p {
+        font-size: 0.9rem;
+    }
+
+    .organograma {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        gap: 20px
+    }
+    
+    .card-organograma {
+        width: 160px;
+        height: 200px;
+        border-radius: 7px;
+    }
+    
+    .card-organograma img {
+        max-width: 160px;
+    }
+    
 }
