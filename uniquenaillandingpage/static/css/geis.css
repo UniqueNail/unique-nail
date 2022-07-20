@@ -188,16 +188,18 @@
         margin-top: 10px !important;
     }
 
-    .geis-imagem {
-        width: 100%;
-    }
-
     .inicio-geis h5 {
         font-size: 3vw;
     }
 
     .geis-lista h5 {
         font-size: 3vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .geis-imagem {
+        width: 100%;
     }
 }
 
