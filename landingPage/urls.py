@@ -24,6 +24,8 @@ urlpatterns = [
     path('topCoat', views.topCoat, name='topCoat'),
 
     path('remov', views.remov, name='remov'),
-    path('monomer', views.monomer, name='monomer')
+    path('monomer', views.monomer, name='monomer'),
+
+    path('brocas', views.brocas, name='brocas'),
 
 ]

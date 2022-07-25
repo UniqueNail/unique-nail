@@ -65,3 +65,7 @@ def remov(request):
 #Acrílico
 def monomer(request):
     return render(request, 'monomer.html')
+
+#Brocas
+def brocas(request):
+    return render(request, 'brocas.html')

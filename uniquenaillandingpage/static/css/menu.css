@@ -1,6 +1,9 @@
 *
 .nav-background {
-    background-color: var(--cor-secundaria);
+    background: rgb(255,204,41);
+    background: var(--gradiente-amarelo);
+    z-index: 1;
+    /* background-color: var(--cor-secundaria); */
 }
 
 .logo {
@@ -12,6 +15,7 @@
     font-size: 1rem;
     font-weight:600;
     text-transform: uppercase;
+    z-index: 1;
 }
 
 .barra-de-menu {
@@ -19,13 +23,16 @@
 }
 
 .lista-aberta {
-    background: var(--cor-secundaria);
+    background: rgb(252,229,34);
+    background: linear-gradient(90deg, rgba(252,229,34,1) 0%, rgba(252,223,35,1) 100%);
     border: none;
+    z-index: 0;
 }
 
 .lista-aberta a {
     font-weight: 600;
-    color: rgba(0,0,0,.55);;
+    color: rgba(0,0,0,.55);
+    z-index: 0;
 }
 
 @media (max-width: 1440px) {

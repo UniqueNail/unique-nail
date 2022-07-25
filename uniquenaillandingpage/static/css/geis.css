@@ -3,18 +3,12 @@
 /* Página Geis */
 .inicio-geis {
     background-color: #F4F4F4;
+    padding-top: 100px;
 }
 
 .inicio-geis h5 {
     max-width: 750px;
 }
-
-/* .card-gel {
-    background-color: var(--branco);
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 1px;
-} */
 
 .cards-geis {
     gap: 10px;
@@ -50,7 +44,7 @@
 
 .geis-lista {
     background-color: #F4F4F4;
-    padding-top: 50px;
+    padding-top: 150px;
     
 }
 
