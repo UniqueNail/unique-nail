@@ -40,6 +40,15 @@ def gelWhite(request):
 def higienizadores(request):
     return render(request, 'higienizadores.html')
 
+def higienizadores1(request):
+    return render(request, 'higienizadores1.html')
+
+def prep(request):
+    return render(request, 'higienizadores/prep.html')
+
+def cleanser(request):
+    return render(request, 'higienizadores/cleanser.html')
+
 
 #Blindagem
 def blindagem(request):

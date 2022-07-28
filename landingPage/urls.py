@@ -16,6 +16,9 @@ urlpatterns = [
     path('gelWhite', views.gelWhite, name='gelWhite'),
     
     path('higienizadores', views.higienizadores, name='higienizadores'),
+    path('higienizadores1', views.higienizadores1, name='higienizadores1'),
+    path('prep', views.prep, name='prep'),
+    path('cleanser', views.cleanser, name='cleanser'),
 
     path('blindagem', views.blindagem, name='blindagem'),
     path('primerAdesivador', views.primerAdesivador, name='primerAdesivador'),

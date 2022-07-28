@@ -4,19 +4,13 @@
 
 {% include 'partials/menu.html' %}
 
-<main>
-	<!-- -------------------- Background de divisão ---------------------- -->
-
-	<div class="background-sobre-1 d-flex justify-content-center ">
-		<img src="/static/img/geis/background-geis-1.gif" alt="Emenda">
-	</div>
-
+<main class="background-simples">
 
 	<!-- ------------------------- Descrição do Gel ------------------------- -->
 
 	<section class="geis-lista">
 		<article class="geis-descricao container">
-			<h2 class="text-center mb-4 titulo-gel">Unique Nail - Top Coat Led/Uv - 10ml</h2>
+			<h2 class="text-center mb-4 mt-5 titulo-gel">Unique Nail - Top Coat Led/Uv - 10ml</h2>
 			<div class="row mt-5">
 				<div data-aos="fade-right" class="col-lg-6 col-md-12 d-flex justify-content-center">
 					<a href="{% url 'blindagem' %}"><img class="img-gel" src="{% static 'img/blindagem/topcoat.png' %}"
@@ -53,8 +47,8 @@
 
 	<!-- --------------------------- Passo a Passo ----------------------------- -->
 
-	<section class="passo-a-passo pt-5" id="modo-usar">
-		<h2 class="titulo-gel text-center pt-5 mb-4" id="precaucoes">Modo de Usar</h2>
+	<section class="passo-a-passo mt-5" id="modo-usar">
+		<h2 class="titulo-passo-a-passo text-center pt-5 mb-4" id="precaucoes">Passo a Passo</h2>
 		<div id="carouselExampleControls" class="carousel slide carousel-dark" data-bs-ride="carousel">
 			<div class="carousel-inner passo-a-passo-container m-auto">
 				
@@ -254,7 +248,7 @@
 
 	<section class="modo-de-usar">
 		<article class="modo-de-usar-descricao m-auto">
-			<h2 class="pt-4 mb-3 ps-3 titulo-gel">Precauções:</h2>
+			<h2 class="pt-5 mb-3 ps-3 titulo-gel">Precauções:</h2>
 			<p class="mb-0 px-3">
                 Mantenha a embalagem fechada após o uso.
 				Faça a prova de toque: Aplique uma pequena quantidade no antebraço e observe se não ocorrerá nenhum tipo

@@ -4,13 +4,13 @@
 
 {% include 'partials/menu.html' %}
 
-<main>
+<main class="background-simples">
 
 	<!-- ------------------------- Descrição do Gel ------------------------- -->
 
 	<section class="geis-lista">
 		<article class="geis-descricao container">
-			<h2 class="text-center mb-4 titulo-gel">Gel Builder Hard - Decoração - 25g</h2>
+			<h2 class="text-center mb-4 titulo-gel">Gel White - Decoração - 25g</h2>
 			<div class="row mt-5">
 				<div data-aos="fade-right" class="col-lg-6 col-md-12 d-flex justify-content-center">
 					<a href="{% url 'geis' %}"><img class="img-gel" src="{% static 'img/geis/gel-white.gif' %}"
@@ -49,8 +49,8 @@
 
 	<!-- --------------------------- Passo a Passo ----------------------------- -->
 
-	<section class="passo-a-passo py-5">
-		<h2 class="titulo-gel text-center pt-5 mb-4 titulo-gel">PASSO A PASSO</h2>
+	<section class="passo-a-passo my-5">
+		<h2 class="titulo-passo-a-passo text-center pt-5 mb-4">PASSO A PASSO</h2>
 		<div id="carouselExampleControls" class="carousel slide carousel-dark" data-bs-ride="carousel">
 			<div class="carousel-inner passo-a-passo-container m-auto">
 				
@@ -249,11 +249,8 @@
 
 	<section class="modo-de-usar">
 		<article class="modo-de-usar-descricao m-auto">
-			<div class="linha-sep m-auto pt-5">
-				<img class="w-100" src="/static/img/geis/linha-gel-icone.png"
-					alt="Ícone de separação de conteúdo com gel">
-			</div>
-			<h1 class="mt-4 mb-3 ps-3 titulo-gel">Precauções:</h1>
+
+			<h1 class="mt-5 mb-3 ps-3 titulo-gel">Precauções:</h1>
 			<p class="mb-0 px-3">
                 Mantenha a embalagem fechada após o uso.
 				Faça a prova de toque: Aplique uma pequena quantidade no antebraço e observe se não ocorrerá nenhum tipo

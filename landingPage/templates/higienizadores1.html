@@ -4,54 +4,125 @@
 
 {% include 'partials/menu.html' %}
 
-<main class="background-simples">
 
-	<!-- ------------------------- Descrição do Gel ------------------------- -->
+<main>
 
-	<section class="geis-lista">
-		<article class="geis-descricao container">
-			<h2 class="text-center mb-4 titulo-gel">Gel Clear - Hard - 25g</h2>
-			<div class="row mt-5">
-				<div data-aos="fade-right" class="col-lg-6 col-md-12 d-flex justify-content-center">
-					<a href="{% url 'geis' %}"><img class="img-gel" src="{% static 'img/geis/gel-clear.png' %}"
-							alt="Gel Unique Nail"></a>
-				</div>
+	<!-- ---------------------- Paralaxee prep --------------------------- -->
+	<div class="paralaxe-prep"></div>
 
-				<div class="col-lg-6 col-md-12 d-flex justify-content-center">
-					<ul class="descricao-gel">
-						<li>Utilizado para Alongamento e Manutenção de Gel, Acrigel, Fibra, Molde, Tips, entre outros;</li>
-						<li>Autonivelante;</li>
-						<li>Tonalidade Clear Transparente;</li>
-						<li>Alta Resistência e Aderência;</li>
-						<li>Ideal para Encapsulamento;</li>
-						<li>Seca em Cabine LED/UV 60 Segundos UV 120 Segundos; </li>
-						<li>Menor quantidade de Pó no processo de Lixamento;</li>
-						<li>Menor sensação de queima;</li>
-						<li>Quantidade reduzida de goma após a cura;</li>
-						<li>Não Abre a Curvatura;</li>
-						<li>N° Processo Anvisa: 25351.298625/2021-85</li>
-					</ul>
-				</div>
+
+	<!-- ------------------------- mini menu ----------------------------- -->
+
+	<section class="inicio-higienizadores">
+		<ul class="nav nav-tabs">
+			<li class="nav-item">
+				<a class="nav-link abas-link active" data-bs-toggle="tab" href="#prep">Prep</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link abas-link" data-bs-toggle="tab" href="#cleanser" id="cleanser-menu">Cleanser</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link abas-link" href="#modo-usar">Modo de Usar</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link abas-link" href="#precaucoes">Precauções</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link abas-link" href="#perguntas-frq">Perguntas Frequentes</a>
+			</li>
+		</ul>
+
+		<div class="tab-content">
+
+			<!-- ------------------- Painél 1 Prep --------------------- -->
+			<div class="tab-pane container active" id="prep">
+				<article class="geis-descricao container">
+					<h2 class="text-center mb-4 pt-5 titulo-gel">Nail Prep - Spray Higienizante - 120ml</h2>
+					<div class="row mt-5">
+						<div data-aos="fade-right" class="col-lg-6 col-md-12 d-flex justify-content-center">
+							<img class="img-gel" src="{% static 'img/higienizadores/prep-120.png' %}"
+								alt="Preparador Unique Nail">
+						</div>
+
+						<div class="col-lg-6 col-md-12 d-flex align-items-center justify-content-center">
+							<ul class="descricao-gel">
+								<li>Desidratador;</li>
+								<li>Spray higienizante refrescante;</li>
+								<li>Controla oleosidade e umidade das unhas;</li>
+								<li>Utilizado antes do processo de aplicação do Primer;</li>
+								<li>Utilizado na limpeza dos utensílios de manicure;</li>
+								<li>Manter longe de fontes de calor e vento;</li>
+								<li>Uso profissional;</li>
+								<li>Registro Anvisa: 25351.708285/2019-90.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="mini-prep">
+						<img class="m-4" src="{% static 'img/higienizadores/prep-refil-min.png' %}"></img>
+					</div>
+					<div class="icones-redes-sociais m-auto d-flex justify-content-center">
+						<a href="https://www.instagram.com/uniquenail.oficial/"><img class="px-2 w-100"
+								src="{% static '/img/Produtos/icone-instagram.png' %}"></img></a>
+
+						<a href="#"><img class="px-2 w-100"
+								src="{% static '/img/Produtos/icone-facebook.png' %}"></img></a>
+
+						<a href="#"><img class="px-2 w-100"
+								src="{% static '/img/Produtos/icone-whatsapp.png' %}"></img></a>
+
+						<a href="#"><img class="px-2 w-100"
+								src="{% static '/img/Produtos/icone-youtube.png' %}"></img></a>
+					</div>
+				</article>
 			</div>
 
-			<div class="icones-redes-sociais m-auto mt-5 d-flex justify-content-center">
-				<a href="https://www.instagram.com/uniquenail.oficial/"><img class="px-2 w-100"
-						src="{% static '/img/Produtos/icone-instagram.png' %}"></img></a>
+			<!-- ----------------- Painél 2 Cleanser ------------------- -->
+			<div class="tab-pane container" id="cleanser">
+				<article class="geis-descricao container">
+					<h2 class="text-center mb-4 pt-5 titulo-gel">Cleanser Plus - Spray -120ml</h2>
+					<div class="row mt-5">
+						<div data-aos="fade-right" class="col-lg-6 col-md-12 d-flex justify-content-center">
+							<img class="img-gel" src="{% static 'img/higienizadores/cleanser-120.png' %}"
+								alt="Preparador Unique Nail">
+						</div>
 
-				<a href="#"><img class="px-2 w-100" src="{% static '/img/Produtos/icone-facebook.png' %}"></img></a>
+						<div class="col-lg-6 col-md-12 d-flex align-items-center justify-content-center">
+							<ul class="descricao-gel">
+								<li>Solução de limpeza para remover a goma do gel;</li>
+								<li>Função cristalizadora;</li>
+								<li>Auxilia no processo de cura e curvatura;</li>
+								<li>Manter longe de fontes de calor e vento;</li>
+								<li>Uso profissional;</li>
+								<li>Registro Anvisa: 25351.704305/2018-72.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="mini-prep">
+						<img class="m-4" src="{% static 'img/higienizadores/cleanser-refil-min.png' %}"></img>
+					</div>
+					<div class="icones-redes-sociais m-auto d-flex justify-content-center">
+						<a href="https://www.instagram.com/uniquenail.oficial/"><img class="px-2 w-100"
+								src="{% static '/img/Produtos/icone-instagram.png' %}"></img></a>
 
-				<a href="#"><img class="px-2 w-100" src="{% static '/img/Produtos/icone-whatsapp.png' %}"></img></a>
+						<a href="#"><img class="px-2 w-100"
+								src="{% static '/img/Produtos/icone-facebook.png' %}"></img></a>
 
-				<a href="#"><img class="px-2 w-100" src="{% static '/img/Produtos/icone-youtube.png' %}"></img></a>
+						<a href="#"><img class="px-2 w-100"
+								src="{% static '/img/Produtos/icone-whatsapp.png' %}"></img></a>
+
+						<a href="#"><img class="px-2 w-100"
+								src="{% static '/img/Produtos/icone-youtube.png' %}"></img></a>
+					</div>
+				</article>
 			</div>
-		</article>
+
+		</div>
+
 	</section>
 
-
-	<!-- --------------------------- Passo a Passo ----------------------------- -->
-
-	<section class="passo-a-passo mt-5">
-		<h2 class="titulo-passo-a-passo text-center pt-5 mb-4">PASSO A PASSO</h2>
+	<!-- ---------------------- Modo de Usar -------------------------- -->
+	<section class="passo-a-passo pt-5" id="modo-usar">
+		<h2 class="titulo-gel text-center pt-5 mb-4" id="precaucoes">Modo de Usar</h2>
 		<div id="carouselExampleControls" class="carousel slide carousel-dark" data-bs-ride="carousel">
 			<div class="carousel-inner passo-a-passo-container m-auto">
 				
@@ -73,7 +144,7 @@
 							</div>
 						</div>
 						<div class="passoapasso-fundo-texto p-2 d-flex justify-content-center align-items-center">
-							<ul><li>Usar o Nail Prep Unique Nail antes de iniciar o processo.</li></ul>
+							<ul><li>Para iniciar o processo de construção da unha de gel, faça a preparação da lâmina ungueal com a lixa manual criando ranhuras para uma melhor da fixação dos produtos, higienize a unha utilizando o <a href="{% url 'higienizadores' %}">Prep Unique</a>.</li></ul>
 						</div>
 					</div>
 				</div>
@@ -83,7 +154,7 @@
 					<div class="d-block justify-content-center d-flex flex-wrap">
 						<div class="borda-fundo-vermelho position-relative ">
 							<div class="imagem-passo-1 position-absolute d-flex justify-content-center align-items-center">
-								<img src="{% static 'img/Produtos/primer-acido-block.png' %}">
+								<img src="{% static 'img/Produtos/ph-bonder-block.png' %}">
 							</div>
 							<div class="detalhe-fundo-vermelho position-absolute">
 								<div class="position-relative">
@@ -96,7 +167,8 @@
 							</div>
 						</div>
 						<div class="passoapasso-fundo-texto p-2 d-flex justify-content-center align-items-center">
-							<ul><li>Aplicar o Primer Ácido Unique Nail com o pincel sem excesso, não pode tocar a cutícula e a pele.</li></ul>
+							<ul><li>Depois da unha devidamente higienizada com o <a href="{% url 'higienizadores' %}">Prep Unique</a>, aplique cuidadosamente o <a href="{% url 'phBonder' %}">PH Bonder Unique</a> para desidratar a lâmina ungueal e retirar qualquer excesso de oleosidade presente na unha.
+							</li></ul>
 						</div>
 					</div>
 				</div>
@@ -106,7 +178,7 @@
 					<div class="d-block justify-content-center d-flex flex-wrap">
 						<div class="borda-fundo-vermelho position-relative ">
 							<div class="imagem-passo-1 position-absolute d-flex justify-content-center align-items-center">
-								<img src="{% static '/img/Produtos/primer-adesivador-block.png' %}">
+								<img src="{% static '/img/Produtos/acido-adesivador.png' %}">
 							</div>
 							<div class="detalhe-fundo-vermelho position-absolute">
 								<div class="position-relative">
@@ -119,7 +191,8 @@
 							</div>
 						</div>
 						<div class="passoapasso-fundo-texto p-2 d-flex justify-content-center align-items-center">
-							<ul><li>Aplicar o Primer Adesivador Unique Nail com o pincel sem excesso, não pode tocar a cutícula e a pele.</li></ul>
+							<ul><li>Após a secagem do <a href="{% url 'phBonder' %}">PH Bonder Unique</a>, aplique cuidadosamente e sem tocar na cutícula o <a href="{% url 'primerAcido' %}"> Primer Ácido Unique Nail </a> e após a secagem do mesmo, utilize o <a href="{% url 'primerAdesivador' %}">Primer Adesivador Unique Nail</a> e deixar secar naturalmente.
+							</li></ul>
 						</div>
 					</div>
 				</div>
@@ -130,7 +203,7 @@
 						<div class="borda-fundo-vermelho position-relative ">
 							<div
 								class="imagem-passo-1 position-absolute d-flex justify-content-center align-items-center">
-								<img src="{% static 'img/geis/gel-clear.png' %}">
+								<img src="{% static 'img/geis/gelbase.png' %}">
 							</div>
 							<div class="detalhe-fundo-vermelho position-absolute">
 								<div class="position-relative">
@@ -143,8 +216,7 @@
 							</div>
 						</div>
 						<div class="passoapasso-fundo-texto p-2 d-flex justify-content-center align-items-center">
-							<ul><li>Aplicar uma pequena quantidade do GEL BUILDER nas unhas naturais e espalhar com o pincel para
-                                unhas em gel.</li></ul>
+							<ul><li>Com a preparação inicial da unha feita inicie o processo de utilização do gel, fazendo a capa base com o <a href="{% url 'gelBase' %}">Gel Base Unique Nail</a>, Leve na cabine para polimerizar por 30seg.</li></ul>
 						</div>
 					</div>
 				</div>
@@ -155,7 +227,7 @@
 						<div class="borda-fundo-vermelho position-relative ">
 							<div
 								class="imagem-passo-1 position-absolute d-flex justify-content-center align-items-center">
-								<img src="{% static 'img/geis/gel-clear.png' %}">
+								<img src="{% static 'img/geis/todos-geis.png' %}">
 							</div>
 							<div class="detalhe-fundo-vermelho position-absolute">
 								<div class="position-relative">
@@ -169,11 +241,11 @@
 						</div>
 						<div class="passoapasso-fundo-texto p-2 d-flex justify-content-center align-items-center">
 							<ul>
-                                <li>Secar nas Cabines:
+                                <li>Após a capa base feita, inicie a construção da unha utilizando os <a href="{% url 'geis' %}">Géis Builder Unique Nail</a> da sua escolha:
                                     <ul>
-                                        <li>LED/UV (durante 60 segundos),</li>
-                                        <li>LED (durante 90 segundos),</li>
-                                        <li>UV (durante 120 segundos).</li>
+                                        <li>Pré Curvatura: 5seg,</li>
+                                        <li>Curvatura do Ponto de Tensão: 10seg,</li>
+                                        <li>Polimerização total: 120seg.</li>
                                     </ul>
                                 </li>
                             </ul>
@@ -200,7 +272,7 @@
 							</div>
 						</div>
 						<div class="passoapasso-fundo-texto p-2 d-flex justify-content-center align-items-center">
-							<ul><li>Limpar os resíduos com o Cleanser e algodão prensado.</li></ul>
+							<ul><li> Após polimerização, utilize o <a href= "#cleanser-menu">Cleanser Plus Unique Nail</a> para fazer a limpeza da camada de dispersão do gel.</li></ul>
 						</div>
 					</div>
 				</div>
@@ -224,7 +296,7 @@
 							</div>
 						</div>
 						<div class="passoapasso-fundo-texto p-2 d-flex justify-content-center align-items-center">
-							<ul><li>Usar o Top Coat ao final do processo.</li></ul>
+							<ul><li>Após o lixamento técnico, faça a limpeza completa de todos resíduos e aplique o <a href="{% url 'topCoat' %}">Top Coat Unique Nail</a> para uma finalização com alto padrão e brilho, leve na cabine para polimerizar por 60seg.</li></ul>
 						</div>
 					</div>
 				</div>
@@ -245,25 +317,27 @@
 
 	</section>
 
-
-	<!-- ------------------------------ Precauções -------------------------- -->
-
+	<!-- ----------------------- Precauções --------------------------- -->
 	<section class="modo-de-usar">
 		<article class="modo-de-usar-descricao m-auto">
-			<h1 class="mt-5 mb-3 ps-3 titulo-gel">Precauções:</h1>
+			<h1 class="pt-5 mb-3 ps-3 titulo-gel">Precauções:</h1>
 			<p class="mb-0 px-3">
-                Mantenha a embalagem fechada após o uso.
-				Faça a prova de toque: Aplique uma pequena quantidade no antebraço e observe se não ocorrerá nenhum tipo
-				de sensibilização. Não aplicar sobre a pele irritada ou lesionada. Em caso de contato com os olhos,
-				lavar com água em abundância. Suspender o uso em caso de irritação. Manusear em local arejado e manter
+				Mantenha a embalagem fechada após o uso.
+				Faça a prova de toque: Aplique uma pequena quantidade no antebraço e observe se não ocorrerá
+				nenhum
+				tipo
+				de sensibilização. Não aplicar sobre a pele irritada ou lesionada. Em caso de contato com os
+				olhos,
+				lavar com água em abundância. Suspender o uso em caso de irritação. Manusear em local arejado e
+				manter
 				lonje do calor e do fogo (não armazenar em temperatura acima de 40°C). Manter fora do alcance de
 				crianças e animais domésticos.
 			</p>
 		</article>
 	</section>
 
-	<!-- --------------------------- Perguntas Frequentes ------------------------- -->
-	<section class="modo-de-usar">
+	<!-- ------------------- Perguntas Frequentes --------------------- -->
+	<section class="modo-de-usar" id="perguntas-frq">
 		<article class="modo-de-usar-descricao m-auto">
 			<div class="linha-sep m-auto">
 				<img class="w-100" src="/static/img/geis/linha-gel-icone.png"
@@ -358,6 +432,7 @@
 			  </div>
 		</article>
 	</section>
+
 </main>
 
 {% include 'partials/footer.html' %}

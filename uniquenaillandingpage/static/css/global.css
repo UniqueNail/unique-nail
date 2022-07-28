@@ -1,0 +1,9 @@
+.background-simples {
+    background-color: var(--cor-de-fundo);
+}
+
+.titulo-passo-a-passo {
+    color: var(--cor-secundaria);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
