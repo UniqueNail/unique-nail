@@ -79,10 +79,10 @@ WSGI_APPLICATION = 'uniquenaillandingpage.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'unique_nail_landing_page',
-        'USER': 'postgres',
-        'PASSWORD': '35330377',
-        'HOST': '127.0.0.1',
+        # 'NAME': 'unique_nail_landing_page',
+        # 'USER': 'postgres',
+        # 'PASSWORD': '35330377',
+        # 'HOST': '127.0.0.1',
     },
 
 }

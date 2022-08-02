@@ -8,7 +8,7 @@
 
 	<!-- ------------------------- Descrição do Gel ------------------------- -->
 
-	<section class="geis-lista">
+	<section class="gel-sobre">
 		<article class="geis-descricao container">
 			<h2 class="text-center mb-4 titulo-gel">Gel Cover - Hard - 25g</h2>
 			<div class="row mt-5">
@@ -49,9 +49,9 @@
 
 	<!-- --------------------------- Passo a Passo ----------------------------- -->
 
-	<section class="passo-a-passo mt-5">
-		<h2 class="titulo-passo-a-passo text-center pt-5 mb-4">PASSO A PASSO</h2>
-		<div id="carouselExampleControls" class="carousel slide carousel-dark" data-bs-ride="carousel">
+	<section class="passo-a-passo mt-5" id="modo-usar">
+		<h2 class="titulo-passo-a-passo text-center pt-5 mb-4" id="precaucoes">Passo a Passo</h2>
+		<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 			<div class="carousel-inner passo-a-passo-container m-auto">
 				
 				<!-- Passo 1 -->
@@ -72,7 +72,7 @@
 							</div>
 						</div>
 						<div class="passoapasso-fundo-texto p-2 d-flex justify-content-center align-items-center">
-							<ul><li>Usar o Nail Prep Unique Nail antes de iniciar o processo.</li></ul>
+							<ul><li>Para iniciar o processo de construção da unha de gel, faça a preparação da lâmina ungueal com a lixa manual criando ranhuras para uma melhor da fixação dos produtos, higienize a unha utilizando o <a href="{% url 'prep' %}">Prep Unique</a>.</li></ul>
 						</div>
 					</div>
 				</div>
@@ -82,7 +82,7 @@
 					<div class="d-block justify-content-center d-flex flex-wrap">
 						<div class="borda-fundo-vermelho position-relative ">
 							<div class="imagem-passo-1 position-absolute d-flex justify-content-center align-items-center">
-								<img src="{% static 'img/Produtos/primer-acido-block.png' %}">
+								<img src="{% static 'img/Produtos/ph-bonder-block.png' %}">
 							</div>
 							<div class="detalhe-fundo-vermelho position-absolute">
 								<div class="position-relative">
@@ -95,7 +95,8 @@
 							</div>
 						</div>
 						<div class="passoapasso-fundo-texto p-2 d-flex justify-content-center align-items-center">
-							<ul><li>Aplicar o Primer Ácido Unique Nail com o pincel sem excesso, não pode tocar a cutícula e a pele.</li></ul>
+							<ul><li>Depois da unha devidamente higienizada com o <a href="{% url 'prep' %}">Prep Unique</a>, aplique cuidadosamente o <a href="{% url 'phBonder' %}">PH Bonder Unique</a> para desidratar a lâmina ungueal e retirar qualquer excesso de oleosidade presente na unha.
+							</li></ul>
 						</div>
 					</div>
 				</div>
@@ -105,7 +106,7 @@
 					<div class="d-block justify-content-center d-flex flex-wrap">
 						<div class="borda-fundo-vermelho position-relative ">
 							<div class="imagem-passo-1 position-absolute d-flex justify-content-center align-items-center">
-								<img src="{% static '/img/Produtos/primer-adesivador-block.png' %}">
+								<img src="{% static '/img/Produtos/acido-adesivador.png' %}">
 							</div>
 							<div class="detalhe-fundo-vermelho position-absolute">
 								<div class="position-relative">
@@ -118,7 +119,8 @@
 							</div>
 						</div>
 						<div class="passoapasso-fundo-texto p-2 d-flex justify-content-center align-items-center">
-							<ul><li>Aplicar o Primer Adesivador Unique Nail com o pincel sem excesso, não pode tocar a cutícula e a pele.</li></ul>
+							<ul><li>Após a secagem do <a href="{% url 'phBonder' %}">PH Bonder Unique</a>, aplique cuidadosamente e sem tocar na cutícula o <a href="{% url 'primerAcido' %}"> Primer Ácido Unique Nail </a> e após a secagem do mesmo, utilize o <a href="{% url 'primerAdesivador' %}">Primer Adesivador Unique Nail</a> e deixar secar naturalmente.
+							</li></ul>
 						</div>
 					</div>
 				</div>
@@ -129,7 +131,7 @@
 						<div class="borda-fundo-vermelho position-relative ">
 							<div
 								class="imagem-passo-1 position-absolute d-flex justify-content-center align-items-center">
-								<img src="{% static 'img/geis/gel-cover.gif' %}">
+								<img src="{% static 'img/geis/gelbase.png' %}">
 							</div>
 							<div class="detalhe-fundo-vermelho position-absolute">
 								<div class="position-relative">
@@ -142,8 +144,7 @@
 							</div>
 						</div>
 						<div class="passoapasso-fundo-texto p-2 d-flex justify-content-center align-items-center">
-							<ul><li>Aplicar uma pequena quantidade do GEL BUILDER nas unhas naturais e espalhar com o pincel para
-                                unhas em gel.</li></ul>
+							<ul><li>Com a preparação inicial da unha feita inicie o processo de utilização do gel, fazendo a capa base com o <a href="{% url 'gelBase' %}">Gel Base Unique Nail</a>, Leve na cabine para polimerizar por 30seg.</li></ul>
 						</div>
 					</div>
 				</div>
@@ -154,7 +155,7 @@
 						<div class="borda-fundo-vermelho position-relative ">
 							<div
 								class="imagem-passo-1 position-absolute d-flex justify-content-center align-items-center">
-								<img src="{% static 'img/geis/gel-cover.gif' %}">
+								<img src="{% static 'img/geis/todos-geis.png' %}">
 							</div>
 							<div class="detalhe-fundo-vermelho position-absolute">
 								<div class="position-relative">
@@ -168,11 +169,11 @@
 						</div>
 						<div class="passoapasso-fundo-texto p-2 d-flex justify-content-center align-items-center">
 							<ul>
-                                <li>Secar nas Cabines:
+                                <li>Após a capa base feita, inicie a construção da unha utilizando os <a href="{% url 'geis' %}">Géis Builder Unique Nail</a> da sua escolha:
                                     <ul>
-                                        <li>LED/UV (durante 60 segundos),</li>
-                                        <li>LED (durante 90 segundos),</li>
-                                        <li>UV (durante 120 segundos).</li>
+                                        <li>Pré Curvatura: 5seg,</li>
+                                        <li>Curvatura do Ponto de Tensão: 10seg,</li>
+                                        <li>Polimerização total: 120seg.</li>
                                     </ul>
                                 </li>
                             </ul>
@@ -199,7 +200,7 @@
 							</div>
 						</div>
 						<div class="passoapasso-fundo-texto p-2 d-flex justify-content-center align-items-center">
-							<ul><li>Limpar os resíduos com o Cleanser e algodão prensado.</li></ul>
+							<ul><li> Após polimerização, utilize o <a href= "{% url 'cleanser' %}">Cleanser Plus Unique Nail</a> para fazer a limpeza da camada de dispersão do gel.</li></ul>
 						</div>
 					</div>
 				</div>
@@ -223,11 +224,10 @@
 							</div>
 						</div>
 						<div class="passoapasso-fundo-texto p-2 d-flex justify-content-center align-items-center">
-							<ul><li>Usar o Top Coat ao final do processo.</li></ul>
+							<ul><li>Após o lixamento técnico, faça a limpeza completa de todos resíduos e aplique o <a href="{% url 'topCoat' %}">Top Coat Unique Nail</a> para uma finalização com alto padrão e brilho, leve na cabine para polimerizar por 60seg.</li></ul>
 						</div>
 					</div>
 				</div>
-
 
 			</div>
 			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"

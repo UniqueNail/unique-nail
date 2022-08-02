@@ -6,17 +6,17 @@
 					<div class="row">
 						<div class="col-md-6 ">
 							<div class="logo-part">
-								<a href="{% url 'index' %}"> <img src="/static/img/logo-unique.png" class="w-50 logo-footer"></a>
+								<a href="{% url 'index' %}"> <img src="/static/img/logo-unique.png" class="logo-footer"></a>
 								<p>Rua Luciola, 15 - Conjunto Ademar Maldonado <br>
 									Belo Horizonte - MG, 30640-710</p>
 								<p>Horário de funcionamento: <br>
 									08:00hrs - 18:00hrs</p>
 							</div>
 						</div>
-						<div class="col-md-6 px-4 sobre-rodape">
-							<h6> Sobre Nós</h6>
-							<p>But horizontal lines can only be a full pixel high.</p>
-							<button href="#" class="btn-footer cor-botao"> Saiba Mais </button><br>
+						<div class="col-md-6 sobre-rodape">
+							<h6>Sobre Nós</h6>
+							<p>A UNIQUE NAIL, apresenta uma nova geração de produtos para unhas.</p>
+							<a href="{% url 'sobre' %}"><button  class="btn-footer cor-botao"> Saiba Mais </button></a><br>
 							<button href="#" class="btn-footer cor-botao my-3"> Fale Conosco</button>
 
 						</div>
@@ -24,16 +24,17 @@
 				</div>
 				<div class="col-md-6">
 					<div class="row">
-						<div class="col-md-6 px-5 menu-rodape">
-							<h6>Menu</h6>
+						<div class="col-md-6 menu-rodape">
+							<h6>Produtos</h6>
 							<div class="row ">
 								<div class="col-md-6">
 									<ul>
-										<li> <a href="#index"> Inicio </a> </li>
-										<li> <a href="#sobre"> Sobre </a> </li>
-										<li> <a href="#"> Serviços </a> </li>
-										<li> <a href="#"> Lojas </a> </li>
-										<li> <a href="#"> Contato </a> </li>
+										<li> <a href="{% url 'geis' %}"> Geis </a> </li>
+										<li> <a href="{% url 'higienizadores' %}"> Higienizadores </a> </li>
+										<li> <a href="{% url 'blindagem' %}"> Blindagem </a> </li>
+										<li> <a href="{% url 'remov' %}"> Removedor </a> </li>
+										<li> <a href="{% url 'monomer' %}"> Acrílico </a> </li>
+										<li> <a href="{% url 'brocas' %}"> Brocas </a> </li>
 									</ul>
 								</div>
 							</div>

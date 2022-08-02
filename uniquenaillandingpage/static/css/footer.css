@@ -1,10 +1,9 @@
-*
-footer {
+* footer {
     color: grey;
 }
 
 footer p, a {
-    font-size: 16px;
+    font-size: 1rem;
     font-family: var(--fonte-primaria);
 }
 
@@ -32,7 +31,8 @@ footer h6:after {
 /* --------------------------------- Logo do Rodapé -------------------------------------- */
 
 .logo-footer {
-    margin-bottom: 40px;
+    width: 200px;
+    margin-bottom: 30px;
 }
 
 .logo-part {
@@ -46,7 +46,7 @@ footer h6:after {
     text-decoration: none;
     border: 1px solid;
     border-radius: 43px;
-    font-size: 13px;
+    font-size: 0.8rem;
     width: 100px;
     height: 30px;
 }
@@ -57,6 +57,11 @@ footer h6:after {
 
 
 /* --------------------------------- Menu do Rodapé -------------------------------------- */
+
+.menu-rodape {
+    padding-left: 48px;
+    padding-right: 48px;
+}
 
 footer ul li {
     list-style: none;
@@ -79,6 +84,12 @@ a:hover {
     color: #f5f5f5 !important;
 }
 
+/* ----------------------------------- Sobre Rodapé -------------------------------------- */
+.sobre-rodape {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
 
 /* --------------------------------- Ícones do Rodapé -------------------------------------- */
 
@@ -91,17 +102,45 @@ a:hover {
 
 /* ---------------------- Ajustes para dispositivos pequenos ------------------------------- */
 
+@media (max-width: 800px) {
+
+    .logo-footer {
+        width: 150px;
+        margin-bottom: 15px;
+    }
+    
+    .sobre-rodape {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .menu-rodape {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
 @media (max-width: 700px) {
-   
-   footer {
-       text-align: center;
-   }
+
+    footer {
+        text-align: center;
+    }
+
+    .logo-footer {
+        width: 180px;
+        margin-bottom: 20px;
+    }
 
     footer h6 {
-        margin-top: 40px;
+        margin-top: 30px;
     }
 
     .btn-footer {
         margin: auto;
     }
+
+    footer p, a {
+        font-size: 0.8rem;
+    }
+    
 }

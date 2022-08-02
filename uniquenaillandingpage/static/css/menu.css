@@ -7,15 +7,26 @@
 }
 
 .logo {
-    width: 125px;
+    width: 100px;
     margin-top: 5px;
 }
 
 .links-do-menu {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight:600;
     text-transform: uppercase;
     z-index: 1;
+}
+
+.menu-link {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.menu-link a {
+    color: var(--cor-premium);
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .barra-de-menu {

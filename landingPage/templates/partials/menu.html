@@ -2,7 +2,7 @@
 	
 	<!-- Inicio Navbar -->
 	<header class="fixed-top">
-		<nav class="navbar navbar-light navbar-expand-lg navbar-light nav-background " id="navbar">
+		<nav class="navbar navbar-expand-lg nav-background navbar-light" id="navbar">
 			<div class="container-fluid barra-de-menu">
 				<a href="{% url 'index' %}"> <img class="logo" src="/static/img/logo-unique-dark.png" /> </a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -11,13 +11,38 @@
 				</button>
 				<div class="collapse navbar-collapse justify-content-end menu-items " id="navbarNav">
 					<ul class="navbar-nav links-do-menu">
-						<li class="nav-item">
-							<a class="nav-link" aria-current="page" href="{% url 'index' %}">Inicio</a>
+						<li class="menu-link">
+							<a aria-current="page" href="{% url 'index' %}">Inicio</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="{% url 'sobre' %}">Sobre</a>
+					
+						<li class="menu-link">
+							<a href="{% url 'sobre' %}">Sobre</a>
 						</li>
-						<li class="nav-item dropdown">
+
+						<li class="menu-link">
+							<a href="{% url 'geis' %}">Géis</a>
+						</li>
+
+						<li class="menu-link">
+							<a href="{% url 'higienizadores' %}">Higienizadores</a>
+						</li>
+
+						<li class="menu-link">
+							<a href="{% url 'blindagem' %}">Blindagem</a>
+						</li>
+
+						<li class="menu-link">
+							<a href="{% url 'remov' %}">Removedor</a>
+						</li>
+
+						<li class="menu-link">
+							<a href="{% url 'monomer' %}">Acrílico</a>
+						</li>
+
+						<li class="menu-link">
+							<a href="{% url 'brocas' %}">Brocas</a>
+						</li>
+						<!-- <li class="nav-item dropdown">
 							<a class="nav-link teste-dropdown dropdown-toggle" id="navbarDropdownMenuLink" role="button"
 								data-bs-toggle="dropdown" aria-expanded="false">Produtos</a>
 							<ul class="dropdown-menu lista-aberta" aria-labelledby="navbarDropdownMenuLink">
@@ -43,12 +68,9 @@
 								</li>
 								<li><a class="dropdown-item" href="{% url 'brocas' %}">Brocas</a></li>
 							</ul>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Contato</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Lojas</a>
+						</li> -->
+						<li class="menu-link">
+							<a href="#">Contato</a>
 						</li>
 					</ul>
 				</div>
