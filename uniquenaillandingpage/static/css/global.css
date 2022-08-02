@@ -2,8 +2,113 @@
     background-color: var(--cor-de-fundo);
 }
 
+/* --------- Estilização do carrossel de passo a passo ---------- */
+
 .titulo-passo-a-passo {
     color: var(--cor-secundaria);
     font-size: 1.5rem;
     text-transform: uppercase;
+}
+
+.icones-redes-sociais {
+    max-width: 280px;
+}
+
+.icones-redes-sociais img {
+    max-width: 60px;
+}
+
+.passo-a-passo {
+    background: url("../img/background.png") no-repeat;
+    background-size: cover;
+    background-color: var(--cor-de-fundo);
+    padding-bottom: 80px;
+}
+
+.passo-a-passo-container {
+    max-width: 1020px;
+}
+
+.borda-fundo-vermelho {
+    background-color: var(--cor-secundaria);
+    width: 385px;
+    height: 403px;
+    border-radius: 5px 0 0 0;
+}
+
+.imagem-passo-1 {
+    background-color: #F4F4F4;
+    width: 355px;
+    height: 355px;
+    left: 30px;
+    top: 23px;
+    border-radius: 0 0 0 60px;
+}
+
+.imagem-passo-1 img {
+    max-height: 307px;
+    max-width: 200px;
+}
+
+.detalhe-fundo-vermelho {
+    background-color: var(--cor-secundaria);
+    width: 117px;
+    height: 119px;
+    border-radius: 5px 0 60px 0
+}
+
+.passoapasso-fundo-texto {
+    background-color: #fff;
+    width: 385px;
+    height: 403px;
+    border-bottom: 25px solid var(--cor-secundaria);
+}
+
+.passoapasso-fundo-texto p {
+    max-width: 356px;
+    color: var(--preto);
+    text-align: justify;
+}
+
+.numero-passoapasso {
+    bottom: 25px;
+    left: 46px;
+}
+
+.numero-passoapasso h1 {
+    color: var(--preto);
+    font-size: 40px;
+}
+
+.passoapasso-fundo-texto a {
+    font-size: 1rem;
+}
+
+
+.botoes {
+    text-decoration: none;
+    border-radius: 43px;
+    font-size: 16px;
+    width: 130px ;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.cor-botao {
+    background-color: var(--cor-secundaria);
+    color: var(--preto);
+    border: none;
+}
+
+.cor-botao:hover {
+    background-color: var(--preto);
+    color: var(--branco);
 }

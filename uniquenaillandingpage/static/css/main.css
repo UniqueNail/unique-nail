@@ -43,17 +43,6 @@
     animation: aparece 3s;
 }
 
-.cor-botao {
-    background-color: var(--cor-secundaria);
-    color: var(--preto);
-    border: none;
-}
-
-.cor-botao:hover {
-    background-color: var(--preto);
-    color: var(--branco);
-}
-
 .sede-unique {
     position: absolute;
     max-width: 600px;
