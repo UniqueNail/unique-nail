@@ -36,35 +36,37 @@ def gelWhite(request):
     return render(request,'geis/gelWhite.html')
 
 
-#Higienizadores
-def higienizadores(request):
-    return render(request, 'higienizadores.html')
-
-def higienizadores1(request):
-    return render(request, 'higienizadores1.html')
+#Preparadores
+def preparadores(request):
+    return render(request, 'preparadores.html')
 
 def prep(request):
-    return render(request, 'higienizadores/prep.html')
+    return render(request, 'preparadores/prep.html')
+
+def phBonder(request):
+    return render(request, 'preparadores/phBonder.html')
+
+def primerAcido(request):
+    return render(request, 'preparadores/primerAcido.html')
+
+
+#Finalizadores
+def finalizadores(request):
+    return render(request, 'finalizadores.html')
 
 def cleanser(request):
-    return render(request, 'higienizadores/cleanser.html')
+    return render(request, 'finalizadores/cleanser.html')
+
+def topCoat(request):
+    return render(request, 'finalizadores/topCoat.html')
 
 
 #Blindagem
 def blindagem(request):
     return render(request, 'blindagem.html')
 
-def phBonder(request):
-    return render(request, 'blindagem/phBonder.html')
-
 def primerAdesivador(request):
     return render(request, 'blindagem/primerAdesivador.html')
-
-def primerAcido(request):
-    return render(request, 'blindagem/primerAcido.html')
-
-def topCoat(request):
-    return render(request, 'blindagem/topCoat.html')
 
 
 #Removedor

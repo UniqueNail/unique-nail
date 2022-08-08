@@ -9,8 +9,7 @@
     --gradiente-amarelo: linear-gradient(90deg, rgba(255,204,41,1) 0%, rgba(250,237,31,1) 50%, rgba(255,204,41,1) 100%);
     --cor-de-fundo: #f4f4f4;
     --cor-secundaria: #f5d654;
-    --cor-premium: #993232; /* #701719 */
-    --cor-prata: radial-gradient(circle at 71.64% 87.48%, #cedad8 0, #c8cecc 25%, #c0c0c0 50%, #b8b3b4 75%, #b1b0b0 100%);
+    --cor-premium: #3D0D03/*#993232; #701719 */;
     --fonte-primaria: "century", system-ui, -apple-system, Roboto, Ubuntu, sans-serif;
 }
 
@@ -46,7 +45,7 @@ h1 {
 }
 
 h2 {
-    color: var(--branco);
+    color: var(--cor-premium);
     font-size: 2rem;
     font-family: var(--fonte-primaria);
 }

@@ -31,6 +31,7 @@
     max-width: 800px;
     text-indent: 50px;
     z-index: 1;
+    color: var(--branco);
 }
 
 .apresentacao h3 {
@@ -68,6 +69,10 @@
 
 .linha-de-separacao {
     margin-top: 100px;
+}
+
+.galeria-imagens {
+    gap: 10px;
 }
 
 .galeria-imagens img {
@@ -351,8 +356,12 @@
         height: 995px;
     }
 
+    .produtos-limpeza {
+        padding-top: 0 !important;
+    }
+
     .produtos-limpeza img {
-        padding-left: 0 !important;
+        padding-left: 10px !important;
     }
 
     .produtos-10ml-geis {
@@ -361,7 +370,7 @@
     }
 
     .produtos-10ml-geis img {
-        margin-top: 50px;
+        margin-top: 45px !important;
     }
 
     .produtos-geis img {
@@ -389,8 +398,8 @@
     }
 
     .img-responsive {
-        width: 175px !important;
-        height: 175px !important;
+        width: 170px !important;
+        height: 170px !important;
     }
 
     .produtos-geis img {
