@@ -13,8 +13,8 @@
 			<h2 class="text-center mb-4 pt-5 titulo-gel">Cleanser Plus - Spray -120ml</h2>
 			<div class="row mt-5">
 				<div data-aos="fade-right" class="col-lg-6 col-md-12 d-flex justify-content-center">
-					<img class="img-gel" src="{% static 'img/higienizadores/cleanser-120.webp' %}"
-						alt="Preparador Unique Nail">
+					<a href="{% url 'finalizadores' %}"><img class="img-gel" src="{% static 'img/higienizadores/cleanser-120.webp' %}"
+						alt="Preparador Unique Nail"></a>
 				</div>
 
 				<div class="col-lg-6 col-md-12 d-flex align-items-center justify-content-center flex-wrap">
@@ -29,15 +29,50 @@
 					<a href="https://mundodasunhas.com.br/produtos/unique-nail-cleanser-plus-120ml/" target= "_blank" class="botoes cor-botao">Loja</a>
 				</div>
 			</div>
-			<div class="icones-redes-sociais m-auto pt-5 d-flex justify-content-center">
-				<a href="https://www.instagram.com/uniquenail.oficial/" target="_blank"><img class="px-2 w-100"
-						src="{% static '/img/Produtos/icone-instagram.png' %}"></img></a>
-				<a href="https://pt-br.facebook.com/uniquenail.oficial/" target="_blank"><img class="px-2 w-100"
-						src="{% static '/img/Produtos/icone-facebook.png' %}"></img></a>
-				<a href="https://linktr.ee/uniquenail.oficial" target="_blank"><img class="px-2 w-100"
-						src="{% static '/img/Produtos/icone-whatsapp.png' %}"></img></a>
-				<a href="https://www.youtube.com/channel/UClGPFj7XfzgkObwj3rhr-YA/featured" target="_blank"><img
-						class="px-2 w-100" src="{% static '/img/Produtos/icone-youtube.png' %}"></img></a>
+			<div class="icones-redes-sociais m-auto mt-5 d-flex justify-content-center pb-4">
+
+				<div class="flip-card">
+					<div class="flip-card-inner">
+					  <div class="flip-card-front">
+						<a href="https://www.instagram.com/uniquenail.oficial/" target="_blank"><img src="{% static '/icones/icone-instagram-1.webp' %}" alt="ícone do instagram"></a>
+					  </div>
+					  <div class="flip-card-back">
+						<a href="https://www.instagram.com/uniquenail.oficial/" target="_blank"><img src="{% static '/icones/icone-instagram-1.1.webp' %}" alt="ícone do instagram"></a>
+					  </div>
+					</div>
+				</div>
+
+				<div class="flip-card">
+					<div class="flip-card-inner">
+					  <div class="flip-card-front">
+						<a href="https://linktr.ee/uniquenail.oficial" target="_blank"><img src="{% static '/icones/icone-whatsapp-1.webp' %}" alt="ícone do instagram"></a>
+					  </div>
+					  <div class="flip-card-back">
+						<a href="https://linktr.ee/uniquenail.oficial" target="_blank"><img src="{% static '/icones/icone-whatsapp-1.1.webp' %}" alt="ícone do instagram"></a>
+					  </div>
+					</div>
+				</div>
+
+				<div class="flip-card">
+					<div class="flip-card-inner">
+					  <div class="flip-card-front">
+						<a href="https://pt-br.facebook.com/uniquenail.oficial/" target="_blank"><img src="{% static '/icones/icone-facebook-1.webp' %}" alt="ícone do instagram"></a>
+					  </div>
+					  <div class="flip-card-back">
+						<a href="https://pt-br.facebook.com/uniquenail.oficial/" target="_blank"><img src="{% static '/icones/icone-facebook-1.1.webp' %}" alt="ícone do instagram"></a>
+					  </div>
+					</div>
+				</div>
+				<div class="flip-card">
+					<div class="flip-card-inner">
+					  <div class="flip-card-front">
+						<a href="https://www.youtube.com/channel/UClGPFj7XfzgkObwj3rhr-YA/featured" target="_blank"><img src="{% static '/icones/icone-youtube-1.webp' %}" alt="ícone do instagram"></a>
+					  </div>
+					  <div class="flip-card-back">
+						<a href="https://www.youtube.com/channel/UClGPFj7XfzgkObwj3rhr-YA/featured" target="_blank"><img src="{% static '/icones/icone-youtube-1.1.webp' %}" alt="ícone do instagram"></a>
+					  </div>
+					</div>
+				</div>
 			</div>
 		</article>
 	</section>

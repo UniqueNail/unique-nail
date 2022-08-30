@@ -19,16 +19,24 @@ urlpatterns = [
     path('prep', views.prep, name='prep'),
     path('phBonder', views.phBonder, name='phBonder'),
     path('primerAcido', views.primerAcido, name='primerAcido'),
+    path('primerAdesivador', views.primerAdesivador, name='primerAdesivador'),
     
     path('finalizadores', views.finalizadores, name='finalizadores'),
     path('cleanser', views.cleanser, name='cleanser'),
     path('topCoat', views.topCoat, name='topCoat'),
+    path('oleodecuticula', views.oleodecuticula, name='oleodecuticula'),
 
     path('blindagem', views.blindagem, name='blindagem'),
-    path('primerAdesivador', views.primerAdesivador, name='primerAdesivador'),
-   
+    path('kitblindagem', views.kitblindagem, name='kitblindagem'),
+    path('passo1', views.passo1, name='passo1'),
+    path('passo2', views.passo2, name='passo2'),
+    path('passo3', views.passo3, name='passo3'),
+    path('passo5', views.passo5, name='passo5'),
+
+    path('fibrafioafio', views.fibrafioafio, name='fibrafioafio'),    
 
     path('remov', views.remov, name='remov'),
+
     path('monomer', views.monomer, name='monomer'),
 
     path('brocas', views.brocas, name='brocas'),

@@ -13,7 +13,7 @@
 			<h2 class="text-center mb-5 titulo-gel">Unique Nail - Primer Ácido - 10ml</h2>
 			<div class="row mt-5">
 				<div data-aos="fade-right" class="col-lg-6 col-md-12 d-flex justify-content-center">
-					<a href="{% url 'blindagem' %}"><img class="img-gel"
+					<a href="{% url 'preparadores' %}"><img class="img-gel"
 							src="{% static 'img/blindagem/primeracido.png' %}" alt="Primer Ácido Unique Nail"></a>
 				</div>
 
@@ -34,15 +34,50 @@
 				</div>
 			</div>
 
-			<div class="icones-redes-sociais m-auto mt-5 d-flex justify-content-center">
-				<a href="https://www.instagram.com/uniquenail.oficial/" target="_blank"><img class="px-2 w-100"
-						src="{% static '/img/Produtos/icone-instagram.png' %}"></img></a>
-				<a href="https://pt-br.facebook.com/uniquenail.oficial/" target="_blank"><img class="px-2 w-100"
-						src="{% static '/img/Produtos/icone-facebook.png' %}"></img></a>
-				<a href="https://linktr.ee/uniquenail.oficial" target="_blank"><img class="px-2 w-100"
-						src="{% static '/img/Produtos/icone-whatsapp.png' %}"></img></a>
-				<a href="https://www.youtube.com/channel/UClGPFj7XfzgkObwj3rhr-YA/featured" target="_blank"><img
-						class="px-2 w-100" src="{% static '/img/Produtos/icone-youtube.png' %}"></img></a>
+			<div class="icones-redes-sociais m-auto mt-5 d-flex justify-content-center pb-4">
+
+				<div class="flip-card">
+					<div class="flip-card-inner">
+					  <div class="flip-card-front">
+						<a href="https://www.instagram.com/uniquenail.oficial/" target="_blank"><img src="{% static '/icones/icone-instagram-1.webp' %}" alt="ícone do instagram"></a>
+					  </div>
+					  <div class="flip-card-back">
+						<a href="https://www.instagram.com/uniquenail.oficial/" target="_blank"><img src="{% static '/icones/icone-instagram-1.1.webp' %}" alt="ícone do instagram"></a>
+					  </div>
+					</div>
+				</div>
+
+				<div class="flip-card">
+					<div class="flip-card-inner">
+					  <div class="flip-card-front">
+						<a href="https://linktr.ee/uniquenail.oficial" target="_blank"><img src="{% static '/icones/icone-whatsapp-1.webp' %}" alt="ícone do instagram"></a>
+					  </div>
+					  <div class="flip-card-back">
+						<a href="https://linktr.ee/uniquenail.oficial" target="_blank"><img src="{% static '/icones/icone-whatsapp-1.1.webp' %}" alt="ícone do instagram"></a>
+					  </div>
+					</div>
+				</div>
+
+				<div class="flip-card">
+					<div class="flip-card-inner">
+					  <div class="flip-card-front">
+						<a href="https://pt-br.facebook.com/uniquenail.oficial/" target="_blank"><img src="{% static '/icones/icone-facebook-1.webp' %}" alt="ícone do instagram"></a>
+					  </div>
+					  <div class="flip-card-back">
+						<a href="https://pt-br.facebook.com/uniquenail.oficial/" target="_blank"><img src="{% static '/icones/icone-facebook-1.1.webp' %}" alt="ícone do instagram"></a>
+					  </div>
+					</div>
+				</div>
+				<div class="flip-card">
+					<div class="flip-card-inner">
+					  <div class="flip-card-front">
+						<a href="https://www.youtube.com/channel/UClGPFj7XfzgkObwj3rhr-YA/featured" target="_blank"><img src="{% static '/icones/icone-youtube-1.webp' %}" alt="ícone do instagram"></a>
+					  </div>
+					  <div class="flip-card-back">
+						<a href="https://www.youtube.com/channel/UClGPFj7XfzgkObwj3rhr-YA/featured" target="_blank"><img src="{% static '/icones/icone-youtube-1.1.webp' %}" alt="ícone do instagram"></a>
+					  </div>
+					</div>
+				</div>
 			</div>
 		</article>
 	</section>
@@ -50,9 +85,9 @@
 
 	<!-- --------------------------- Passo a Passo ----------------------------- -->
 
-	<section class="passo-a-passo mt-5" id="modo-usar">
+	<section class="passo-a-passo mt-5 pb-4" id="modo-usar">
 		<h2 class="titulo-passo-a-passo text-center pt-5 mb-4" id="precaucoes">Passo a Passo</h2>
-		<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+		<div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
 			<div class="carousel-inner passo-a-passo-container m-auto">
 
 				<!-- Passo 1 -->
@@ -65,20 +100,15 @@
 							</div>
 							<div class="detalhe-fundo-vermelho position-absolute">
 								<div class="position-relative">
-									<img src="{% static '/img/geis/detalhe-passoapasso.png' %}">
-									<div class="position-absolute numero-passoapasso">
-										<h1>1</h1>
-									</div>
+									<h1 class="numero-do-passo-a-passo">1</h1>
 								</div>
-
 							</div>
 						</div>
 						<div class="passoapasso-fundo-texto p-2 d-flex justify-content-center align-items-center">
 							<ul>
 								<li>Para iniciar o processo de construção da unha de gel, faça a preparação da lâmina
 									ungueal com a lixa manual criando ranhuras para uma melhor da fixação dos produtos,
-									higienize a unha utilizando o <a href="{% url 'prep' %}">Prep Unique</a>.
-								</li>
+									higienize a unha utilizando o <a href="{% url 'prep' %}">Prep Unique</a>.</li>
 							</ul>
 						</div>
 					</div>
@@ -93,10 +123,9 @@
 								<img src="{% static 'img/Produtos/ph-bonder-block.png' %}">
 							</div>
 							<div class="detalhe-fundo-vermelho position-absolute">
-								<div class="position-relative">
-									<img src="{% static '/img/geis/detalhe-passoapasso.png' %}">
-									<div class="position-absolute numero-passoapasso">
-										<h1>2</h1>
+								<div class="detalhe-fundo-vermelho position-absolute">
+									<div class="position-relative">
+										<h1 class="numero-do-passo-a-passo">2</h1>
 									</div>
 								</div>
 
@@ -105,7 +134,7 @@
 						<div class="passoapasso-fundo-texto p-2 d-flex justify-content-center align-items-center">
 							<ul>
 								<li>Depois da unha devidamente higienizada com o <a href="{% url 'prep' %}">Prep
-										Unique</a>, aplique cuidadosamente o <a href="{% url 'blindagem' %}">PH Bonder
+										Unique</a>, aplique cuidadosamente o <a href="{% url 'phBonder' %}">PH Bonder
 										Unique</a> para desidratar a lâmina ungueal e retirar qualquer excesso de
 									oleosidade presente na unha.
 								</li>
@@ -123,10 +152,9 @@
 								<img src="{% static '/img/Produtos/acido-adesivador.png' %}">
 							</div>
 							<div class="detalhe-fundo-vermelho position-absolute">
-								<div class="position-relative">
-									<img src="{% static '/img/geis/detalhe-passoapasso.png' %}">
-									<div class="position-absolute numero-passoapasso">
-										<h1>3</h1>
+								<div class="detalhe-fundo-vermelho position-absolute">
+									<div class="position-relative">
+										<h1 class="numero-do-passo-a-passo">3</h1>
 									</div>
 								</div>
 
@@ -134,11 +162,11 @@
 						</div>
 						<div class="passoapasso-fundo-texto p-2 d-flex justify-content-center align-items-center">
 							<ul>
-								<li>Após a secagem do <a href="{% url 'blindagem' %}">PH Bonder Unique</a>, aplique
-									cuidadosamente e sem tocar na cutícula o <a href="{% url 'blindagem' %}"> Primer
+								<li>Após a secagem do <a href="{% url 'phBonder' %}">PH Bonder Unique</a>, aplique
+									cuidadosamente e sem tocar na cutícula o <a href="{% url 'primerAcido' %}"> Primer
 										Ácido Unique Nail </a> e após a secagem do mesmo, utilize o <a
-										href="{% url 'blindagem' %}">Primer Adesivador Unique Nail</a> e deixar secar
-									naturalmente.
+										href="{% url 'primerAdesivador' %}">Primer Adesivador Unique Nail</a> e deixar
+									secar naturalmente.
 								</li>
 							</ul>
 						</div>
@@ -155,12 +183,8 @@
 							</div>
 							<div class="detalhe-fundo-vermelho position-absolute">
 								<div class="position-relative">
-									<img src="{% static '/img/geis/detalhe-passoapasso.png' %}">
-									<div class="position-absolute numero-passoapasso">
-										<h1>4</h1>
-									</div>
+									<h1 class="numero-do-passo-a-passo">4</h1>
 								</div>
-
 							</div>
 						</div>
 						<div class="passoapasso-fundo-texto p-2 d-flex justify-content-center align-items-center">
@@ -183,12 +207,8 @@
 							</div>
 							<div class="detalhe-fundo-vermelho position-absolute">
 								<div class="position-relative">
-									<img src="{% static '/img/geis/detalhe-passoapasso.png' %}">
-									<div class="position-absolute numero-passoapasso">
-										<h1>5</h1>
-									</div>
+									<h1 class="numero-do-passo-a-passo">5</h1>
 								</div>
-
 							</div>
 						</div>
 						<div class="passoapasso-fundo-texto p-2 d-flex justify-content-center align-items-center">
@@ -216,17 +236,13 @@
 							</div>
 							<div class="detalhe-fundo-vermelho position-absolute">
 								<div class="position-relative">
-									<img src="{% static '/img/geis/detalhe-passoapasso.png' %}">
-									<div class="position-absolute numero-passoapasso">
-										<h1>6</h1>
-									</div>
+									<h1 class="numero-do-passo-a-passo">6</h1>
 								</div>
-
 							</div>
 						</div>
 						<div class="passoapasso-fundo-texto p-2 d-flex justify-content-center align-items-center">
 							<ul>
-								<li> Após polimerização, utilize o <a href="#cleanser-menu">Cleanser Plus Unique
+								<li> Após polimerização, utilize o <a href="{% url 'cleanser' %}">Cleanser Plus Unique
 										Nail</a> para fazer a limpeza da camada de dispersão do gel.</li>
 							</ul>
 						</div>
@@ -243,24 +259,19 @@
 							</div>
 							<div class="detalhe-fundo-vermelho position-absolute">
 								<div class="position-relative">
-									<img src="{% static '/img/geis/detalhe-passoapasso.png' %}">
-									<div class="position-absolute numero-passoapasso">
-										<h1>7</h1>
-									</div>
+									<h1 class="numero-do-passo-a-passo">7</h1>
 								</div>
-
 							</div>
 						</div>
 						<div class="passoapasso-fundo-texto p-2 d-flex justify-content-center align-items-center">
 							<ul>
 								<li>Após o lixamento técnico, faça a limpeza completa de todos resíduos e aplique o <a
-										href="{% url 'blindagem' %}">Top Coat Unique Nail</a> para uma finalização com
+										href="{% url 'topCoat' %}">Top Coat Unique Nail</a> para uma finalização com
 									alto padrão e brilho, leve na cabine para polimerizar por 60seg.</li>
 							</ul>
 						</div>
 					</div>
 				</div>
-
 
 			</div>
 			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"

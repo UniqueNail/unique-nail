@@ -49,6 +49,9 @@ def phBonder(request):
 def primerAcido(request):
     return render(request, 'preparadores/primerAcido.html')
 
+def primerAdesivador(request):
+    return render(request, 'preparadores/primerAdesivador.html')
+
 
 #Finalizadores
 def finalizadores(request):
@@ -60,22 +63,44 @@ def cleanser(request):
 def topCoat(request):
     return render(request, 'finalizadores/topCoat.html')
 
+def oleodecuticula(request):
+    return render(request, 'finalizadores/oleodecuticula.html')
+
 
 #Blindagem
 def blindagem(request):
     return render(request, 'blindagem.html')
 
-def primerAdesivador(request):
-    return render(request, 'blindagem/primerAdesivador.html')
+def kitblindagem(request):
+    return render(request, 'blindagem/kitblindagem.html')
+
+def passo1(request):
+    return render(request, 'blindagem/passo1.html')
+
+def passo2(request):
+    return render(request, 'blindagem/passo2.html')
+
+def passo3(request):
+    return render(request, 'blindagem/passo3.html')
+
+def passo5(request):
+    return render(request, 'blindagem/passo5.html')
+
+
+#Fibra fio a fio
+def fibrafioafio(request):
+    return render(request, 'fibrafioafio.html')
 
 
 #Removedor
 def remov(request):
     return render(request, 'remov.html')
 
+
 #Acrílico
 def monomer(request):
     return render(request, 'monomer.html')
+
 
 #Brocas
 def brocas(request):

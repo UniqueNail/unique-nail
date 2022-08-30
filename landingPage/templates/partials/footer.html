@@ -1,58 +1,113 @@
-	<!-- Inicio do Rodapé -->
-	<footer class="container-fluid bg-grey py-5">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6">
-					<div class="row">
-						<div class="col-md-6 ">
-							<div class="logo-part">
-								<a href="{% url 'index' %}"> <img src="/static/img/logo-unique.png" class="logo-footer"></a>
-								<p>Rua Luciola, 15 - Conjunto Ademar Maldonado <br>
-									Belo Horizonte - MG, 30640-710</p>
-								<p>Horário de funcionamento: <br>
-									08:00hrs - 18:00hrs</p>
-							</div>
-						</div>
-						<div class="col-md-6 sobre-rodape">
-							<h6>Sobre Nós</h6>
-							<p>A UNIQUE NAIL, apresenta uma nova geração de produtos para unhas.</p>
-							<a href="{% url 'sobre' %}"><button  class="btn-footer cor-botao"> Saiba Mais </button></a><br>
-							<button href="#" class="btn-footer cor-botao my-3"> Fale Conosco</button>
+{% load static %}
 
+<!-- Inicio do Rodapé -->
+<footer class="container-fluid bg-grey py-5">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-6 ">
+						<div class="logo-part">
+							<a href="{% url 'index' %}"> <img src="/static/img/logo-unique.png" class="logo-footer"></a>
+							<p>Rua Luciola, 15 - Conjunto Ademar Maldonado <br>
+								Belo Horizonte - MG, 30640-710</p>
+							<p>Horário de funcionamento: <br>
+								08:00hrs - 18:00hrs</p>
 						</div>
 					</div>
+					<div class="col-md-6 sobre-rodape">
+						<h6>Sobre Nós</h6>
+						<p>A UNIQUE NAIL, apresenta uma nova geração de produtos para unhas.</p>
+						<a href="{% url 'sobre' %}"><button class="btn-footer cor-botao"> Saiba Mais </button></a><br>
+						<a href="https://linktr.ee/uniquenail.oficial" target="_blank" ><button class="btn-footer cor-botao my-3"> Fale Conosco</button></a>
+
+					</div>
 				</div>
-				<div class="col-md-6">
-					<div class="row">
-						<div class="col-md-6 menu-rodape">
-							<h6>Produtos</h6>
-							<div class="row ">
-								<div class="col-md-6">
-									<ul>
-										<li> <a href="{% url 'geis' %}"> Geis </a> </li>
-										<li> <a href="{% url 'preparadores' %}"> Preparadores </a> </li>
-										<li> <a href="{% url 'blindagem' %}"> Blindagem </a> </li>
-										<li> <a href="{% url 'remov' %}"> Removedor </a> </li>
-										<li> <a href="{% url 'monomer' %}"> Acrílico </a> </li>
-										<li> <a href="{% url 'brocas' %}"> Brocas </a> </li>
-									</ul>
+			</div>
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-6 menu-rodape">
+						<h6>Produtos</h6>
+							<div class="col-md-6">
+								<ul>
+									<li> <a href="{% url 'preparadores' %}"> Preparadores </a> </li>
+									<li> <a href="{% url 'geis' %}"> Geis </a> </li>
+									<li> <a href="{% url 'finalizadores' %}"> Finalizadores </a> </li>
+									<li> <a href="{% url 'blindagem' %}"> Blindagem </a> </li>
+									<li> <a href="{% url 'fibrafioafio' %}"> Fibra de Vidro</a> </li>
+									<li> <a href="{% url 'monomer' %}"> Monomer </a> </li>
+									<li> <a href="{% url 'remov' %}"> Remov </a> </li>
+									<li> <a href="{% url 'brocas' %}"> Brocas </a> </li>
+								</ul>
+							</div>
+					</div>
+					<div class="col-md-6 sociais-rodape">
+						<h6> Redes Sociais</h6>
+						<div class="social d-flex justify-content-center flex-wrap">
+							<div class="flip-card">
+								<div class="flip-card-inner">
+									<div class="flip-card-front">
+										<a href="https://www.instagram.com/uniquenail.oficial/" target="_blank"><img
+											class="fa pb-4" src="{% static '/icones/icone-instagram-1.webp' %}"
+												alt="ícone do instagram"></a>
+									</div>
+									<div class="flip-card-back">
+										<a href="https://www.instagram.com/uniquenail.oficial/" target="_blank"><img
+											class="fa pb-4" src="{% static '/icones/icone-instagram-1.1.webp' %}"
+												alt="ícone do instagram"></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="flip-card">
+								<div class="flip-card-inner">
+									<div class="flip-card-front">
+										<a href="https://linktr.ee/uniquenail.oficial" target="_blank"><img
+											class="fa pb-4" src="{% static '/icones/icone-whatsapp-1.webp' %}"
+												alt="ícone do instagram"></a>
+									</div>
+									<div class="flip-card-back">
+										<a href="https://linktr.ee/uniquenail.oficial" target="_blank"><img
+											class="fa pb-4" src="{% static '/icones/icone-whatsapp-1.1.webp' %}"
+												alt="ícone do instagram"></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="flip-card">
+								<div class="flip-card-inner">
+									<div class="flip-card-front">
+										<a href="https://pt-br.facebook.com/uniquenail.oficial/" target="_blank"><img
+											class="fa pb-4" src="{% static '/icones/icone-facebook-1.webp' %}"
+												alt="ícone do instagram"></a>
+									</div>
+									<div class="flip-card-back">
+										<a href="https://pt-br.facebook.com/uniquenail.oficial/" target="_blank"><img
+											class="fa pb-4" src="{% static '/icones/icone-facebook-1.1.webp' %}"
+												alt="ícone do instagram"></a>
+									</div>
+								</div>
+							</div>
+							<div class="flip-card">
+								<div class="flip-card-inner">
+									<div class="flip-card-front">
+										<a href="https://www.youtube.com/channel/UClGPFj7XfzgkObwj3rhr-YA/featured"
+											target="_blank"><img class="fa pb-4" src="{% static '/icones/icone-youtube-1.webp' %}"
+												alt="ícone do instagram"></a>
+									</div>
+									<div class="flip-card-back">
+										<a href="https://www.youtube.com/channel/UClGPFj7XfzgkObwj3rhr-YA/featured"
+											target="_blank"><img class="fa pb-4" src="{% static '/icones/icone-youtube-1.1.webp' %}"
+												alt="ícone do instagram"></a>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-6 sociais-rodape">
-							<h6> Redes Sociais</h6>
-							<div class="social">
-								<a href="https://www.instagram.com/uniquenail.oficial/" target="_blank"><img
-										src="/static/img/instagram.png" class="fa fa-whatsapp pe-2 pb-4"
-										aria-hidden="true"></img></a>
-								<a href="https://linktr.ee/uniquenail.oficial" target="_blank"><img src="/static/img/whatsapp.png"
-										class="fa fa-instagram ps-2 pb-4" aria-hidden="true"></img></a>
-							</div>
-							<p>Não deixe de conferir nossas redes sociais.</p>
-						</div>
+						<p class="footer-frase">Não deixe de conferir nossas redes sociais.</p>
 					</div>
 				</div>
 			</div>
 		</div>
-		</div>
-	</footer>
+	</div>
+	</div>
+</footer>

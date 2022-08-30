@@ -24,19 +24,15 @@
 						</li>
 
 						<li class="menu-link">
-							<a href="{% url 'blindagem' %}">Capa Base</a>
-						</li>
-
-						<li class="menu-link">
-							<a href="{% url 'blindagem' %}">Blindagem</a>
-						</li>
-
-						<li class="menu-link">
 							<a href="{% url 'geis' %}">Géis</a>
 						</li>
 
 						<li class="menu-link">
 							<a href="{% url 'finalizadores' %}">Finalizadores</a>
+						</li>
+
+						<!-- <li class="menu-link">
+							<a href="{% url 'blindagem' %}">Blindagem</a>
 						</li>
 
 						<li class="menu-link">
@@ -49,34 +45,32 @@
 
 						<li class="menu-link">
 							<a href="{% url 'brocas' %}">Brocas</a>
-						</li>
-						<!-- <li class="nav-item dropdown">
-							<a class="nav-link teste-dropdown dropdown-toggle" id="navbarDropdownMenuLink" role="button"
-								data-bs-toggle="dropdown" aria-expanded="false">Produtos</a>
-							<ul class="dropdown-menu lista-aberta" aria-labelledby="navbarDropdownMenuLink">
-								<li><a class="dropdown-item" href="{% url 'geis' %}">Géis</a></li>
-								<li>
-									<hr class="dropdown-divider">
-								</li>
-								<li><a class="dropdown-item" href="{% url 'preparadores' %}">Preparadores</a></li>
-								<li>
-									<hr class="dropdown-divider">
-								</li>
-								<li><a class="dropdown-item" href="{% url 'blindagem' %}">Blindagem</a></li>
-								<li>
-									<hr class="dropdown-divider">
-								</li>
-								<li><a class="dropdown-item" href="{% url 'remov' %}">Removedor</a></li>
-								<li>
-									<hr class="dropdown-divider">
-								</li>
-								<li><a class="dropdown-item" href="{% url 'monomer' %}">Acrílico</a></li>
-								<li>
-									<hr class="dropdown-divider">
-								</li>
-								<li><a class="dropdown-item" href="{% url 'brocas' %}">Brocas</a></li>
-							</ul>
 						</li> -->
+						
+						<li class="menu-link dropdown">
+							<a class="teste-dropdown dropdown-toggle" id="navbarDropdownMenuLink" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false">Outros</a>
+							<ul class="dropdown-menu lista-aberta" aria-labelledby="navbarDropdownMenuLink">
+								<li class="menu-link"><a class="dropdown-item text-dark" href="{% url 'blindagem' %}">Blindagem</a></li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li><a class="dropdown-item text-dark" href="{% url 'fibrafioafio' %}">Fibra de Vidro</a></li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li><a class="dropdown-item text-dark" href="{% url 'monomer' %}">Monomer</a></li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li><a class="dropdown-item text-dark" href="{% url 'remov' %}">Remov</a></li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li><a class="dropdown-item text-dark" href="{% url 'brocas' %}">Brocas</a></li>
+							</ul>
+						</li>
+
 						<li class="menu-link">
 							<a href="https://linktr.ee/uniquenail.oficial" target="_blank">Contato</a>
 						</li>

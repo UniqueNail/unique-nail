@@ -13,8 +13,8 @@
 			<h2 class="text-center mb-4 pt-5 titulo-gel">Nail Prep - Spray Higienizante - 120ml</h2>
 			<div class="row mt-5">
 				<div data-aos="fade-right" class="col-lg-6 col-md-12 d-flex justify-content-center">
-					<img class="img-gel" src="{% static 'img/higienizadores/prep-120.webp' %}"
-						alt="Preparador Unique Nail">
+					<a href="{% url 'preparadores' %}"><img class="img-gel pb-4" src="{% static 'img/higienizadores/prep-120.webp' %}"
+						alt="Preparador Unique Nail"></a>
 				</div>
 
 				<div class="col-lg-6 col-md-12 d-flex align-items-center justify-content-center flex-wrap">
@@ -31,23 +31,58 @@
 					<a href="https://mundodasunhas.com.br/produtos/unique-nail-nail-prep-120ml/" target= "_blank" class="botoes cor-botao">Loja</a>
 				</div>
 			</div>
-			<div class="icones-redes-sociais m-auto pt-5 d-flex justify-content-center">
-				<a href="https://www.instagram.com/uniquenail.oficial/" target="_blank"><img class="px-2 w-100"
-						src="{% static '/img/Produtos/icone-instagram.png' %}"></img></a>
-				<a href="https://pt-br.facebook.com/uniquenail.oficial/" target="_blank"><img class="px-2 w-100"
-						src="{% static '/img/Produtos/icone-facebook.png' %}"></img></a>
-				<a href="https://linktr.ee/uniquenail.oficial" target="_blank"><img class="px-2 w-100"
-						src="{% static '/img/Produtos/icone-whatsapp.png' %}"></img></a>
-				<a href="https://www.youtube.com/channel/UClGPFj7XfzgkObwj3rhr-YA/featured" target="_blank"><img
-						class="px-2 w-100" src="{% static '/img/Produtos/icone-youtube.png' %}"></img></a>
+			<div class="icones-redes-sociais m-auto mt-5 d-flex justify-content-center pb-4">
+
+				<div class="flip-card">
+					<div class="flip-card-inner">
+					  <div class="flip-card-front">
+						<a href="https://www.instagram.com/uniquenail.oficial/" target="_blank"><img src="{% static '/icones/icone-instagram-1.webp' %}" alt="ícone do instagram"></a>
+					  </div>
+					  <div class="flip-card-back">
+						<a href="https://www.instagram.com/uniquenail.oficial/" target="_blank"><img src="{% static '/icones/icone-instagram-1.1.webp' %}" alt="ícone do instagram"></a>
+					  </div>
+					</div>
+				</div>
+
+				<div class="flip-card">
+					<div class="flip-card-inner">
+					  <div class="flip-card-front">
+						<a href="https://linktr.ee/uniquenail.oficial" target="_blank"><img src="{% static '/icones/icone-whatsapp-1.webp' %}" alt="ícone do instagram"></a>
+					  </div>
+					  <div class="flip-card-back">
+						<a href="https://linktr.ee/uniquenail.oficial" target="_blank"><img src="{% static '/icones/icone-whatsapp-1.1.webp' %}" alt="ícone do instagram"></a>
+					  </div>
+					</div>
+				</div>
+
+				<div class="flip-card">
+					<div class="flip-card-inner">
+					  <div class="flip-card-front">
+						<a href="https://pt-br.facebook.com/uniquenail.oficial/" target="_blank"><img src="{% static '/icones/icone-facebook-1.webp' %}" alt="ícone do instagram"></a>
+					  </div>
+					  <div class="flip-card-back">
+						<a href="https://pt-br.facebook.com/uniquenail.oficial/" target="_blank"><img src="{% static '/icones/icone-facebook-1.1.webp' %}" alt="ícone do instagram"></a>
+					  </div>
+					</div>
+				</div>
+				<div class="flip-card">
+					<div class="flip-card-inner">
+					  <div class="flip-card-front">
+						<a href="https://www.youtube.com/channel/UClGPFj7XfzgkObwj3rhr-YA/featured" target="_blank"><img src="{% static '/icones/icone-youtube-1.webp' %}" alt="ícone do instagram"></a>
+					  </div>
+					  <div class="flip-card-back">
+						<a href="https://www.youtube.com/channel/UClGPFj7XfzgkObwj3rhr-YA/featured" target="_blank"><img src="{% static '/icones/icone-youtube-1.1.webp' %}" alt="ícone do instagram"></a>
+					  </div>
+					</div>
+				</div>
 			</div>
 		</article>
 	</section>
 
 	<!-- ---------------------- Modo de Usar -------------------------- -->
-	<section class="passo-a-passo mt-5" id="modo-usar">
+	<section class="passo-a-passo mt-5 pb-4" id="modo-usar">
 		<h2 class="titulo-passo-a-passo text-center pt-5 mb-4" id="precaucoes">Passo a Passo</h2>
-		<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+		<div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
 			<div class="carousel-inner passo-a-passo-container m-auto">
 
 				<!-- Passo 1 -->
@@ -60,12 +95,8 @@
 							</div>
 							<div class="detalhe-fundo-vermelho position-absolute">
 								<div class="position-relative">
-									<img src="{% static '/img/geis/detalhe-passoapasso.png' %}">
-									<div class="position-absolute numero-passoapasso">
-										<h1>1</h1>
-									</div>
+									<h1 class="numero-do-passo-a-passo">1</h1>
 								</div>
-
 							</div>
 						</div>
 						<div class="passoapasso-fundo-texto p-2 d-flex justify-content-center align-items-center">
@@ -87,10 +118,9 @@
 								<img src="{% static 'img/Produtos/ph-bonder-block.png' %}">
 							</div>
 							<div class="detalhe-fundo-vermelho position-absolute">
-								<div class="position-relative">
-									<img src="{% static '/img/geis/detalhe-passoapasso.png' %}">
-									<div class="position-absolute numero-passoapasso">
-										<h1>2</h1>
+								<div class="detalhe-fundo-vermelho position-absolute">
+									<div class="position-relative">
+										<h1 class="numero-do-passo-a-passo">2</h1>
 									</div>
 								</div>
 
@@ -117,10 +147,9 @@
 								<img src="{% static '/img/Produtos/acido-adesivador.png' %}">
 							</div>
 							<div class="detalhe-fundo-vermelho position-absolute">
-								<div class="position-relative">
-									<img src="{% static '/img/geis/detalhe-passoapasso.png' %}">
-									<div class="position-absolute numero-passoapasso">
-										<h1>3</h1>
+								<div class="detalhe-fundo-vermelho position-absolute">
+									<div class="position-relative">
+										<h1 class="numero-do-passo-a-passo">3</h1>
 									</div>
 								</div>
 
@@ -149,12 +178,8 @@
 							</div>
 							<div class="detalhe-fundo-vermelho position-absolute">
 								<div class="position-relative">
-									<img src="{% static '/img/geis/detalhe-passoapasso.png' %}">
-									<div class="position-absolute numero-passoapasso">
-										<h1>4</h1>
-									</div>
+									<h1 class="numero-do-passo-a-passo">4</h1>
 								</div>
-
 							</div>
 						</div>
 						<div class="passoapasso-fundo-texto p-2 d-flex justify-content-center align-items-center">
@@ -177,12 +202,8 @@
 							</div>
 							<div class="detalhe-fundo-vermelho position-absolute">
 								<div class="position-relative">
-									<img src="{% static '/img/geis/detalhe-passoapasso.png' %}">
-									<div class="position-absolute numero-passoapasso">
-										<h1>5</h1>
-									</div>
+									<h1 class="numero-do-passo-a-passo">5</h1>
 								</div>
-
 							</div>
 						</div>
 						<div class="passoapasso-fundo-texto p-2 d-flex justify-content-center align-items-center">
@@ -210,12 +231,8 @@
 							</div>
 							<div class="detalhe-fundo-vermelho position-absolute">
 								<div class="position-relative">
-									<img src="{% static '/img/geis/detalhe-passoapasso.png' %}">
-									<div class="position-absolute numero-passoapasso">
-										<h1>6</h1>
-									</div>
+									<h1 class="numero-do-passo-a-passo">6</h1>
 								</div>
-
 							</div>
 						</div>
 						<div class="passoapasso-fundo-texto p-2 d-flex justify-content-center align-items-center">
@@ -237,12 +254,8 @@
 							</div>
 							<div class="detalhe-fundo-vermelho position-absolute">
 								<div class="position-relative">
-									<img src="{% static '/img/geis/detalhe-passoapasso.png' %}">
-									<div class="position-absolute numero-passoapasso">
-										<h1>7</h1>
-									</div>
+									<h1 class="numero-do-passo-a-passo">7</h1>
 								</div>
-
 							</div>
 						</div>
 						<div class="passoapasso-fundo-texto p-2 d-flex justify-content-center align-items-center">

@@ -1,9 +1,20 @@
 * .background {
     background: url("../img/background.png") no-repeat;
-    background-color: var(--branco);
+    background-color: var(--preto);
     height: 2150px;
     background-size: cover;
     position: relative;
+}
+
+.background-inicial {
+    background: url("../img/background-inicial-invertido.webp") no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 930px;
+}
+
+.titulo-preto {
+    color: var(--preto) !important;
 }
 
 .introducao {
@@ -68,7 +79,7 @@
 }
 
 .linha-de-separacao {
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
 .galeria-imagens {
@@ -102,7 +113,7 @@
 /* --------------------------------- Estilizando o Kit de 8 produtos -------------------------------------- */
 
 .background-2 {
-    background: url("../img/background-2.png") no-repeat;
+    background: url("../img/background-2.webp") no-repeat;
     background-color: var(--branco);
     height: 1000px;
     background-size: cover;
@@ -263,11 +274,24 @@
 }
 
 
+/* ----------------------------------------------- Mapa ---------------------------------------------------  */
+
+.mapa-unique {
+    display: flex;
+}
+
+
 /* --------------------------------- Ajustes para dispositivos médios -------------------------------------- */
 
 @media (max-width: 1080px) {
+
     .background {
-        height: 2600px;
+        height: 2200px;
+    }
+
+    .background-inicial {
+        background: url("../img/background-inicial-tablet.webp") no-repeat;
+        height: 700px;
     }
 
     .introducao {
@@ -285,13 +309,15 @@
         flex-wrap: wrap;
         text-align: justify;
         max-width: 100%;
+        margin-top: 10px !important;
     }
 
     .apresentacao h1 {
         width: 100%;
         margin-left: 50px;
         margin-right: 50px;
-        margin-top: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
         text-align: center;
     }
 
@@ -389,7 +415,12 @@
 @media (max-width: 500px) {
 
     .background {
-        height: 2000px;
+        height: 1600px;
+    }
+
+    .background-inicial {
+        background: url("../img/background-inicial-smartp.webp") no-repeat;
+        height: 700px;
     }
 
     .linha-geis-prateleira {
@@ -418,8 +449,8 @@
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 359px) {
     .background {
-        height: 2500px;
+        height: 2100px;
     }
 }

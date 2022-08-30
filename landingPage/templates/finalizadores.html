@@ -8,11 +8,13 @@
 <main class="blindagem-corpo">
 
     <!-- ---------------------- Paralaxee prep --------------------------- -->
-    <div class="paralaxe-blind">
-        <div class="inicio-blind">
-            <h1 class="titulo-blind-principal">Adesão, proteção e fortalecimento das unhas.</h1>
-        </div>
-    </div>
+    <section class="inicio-finalizadores">
+        <div class="d-flex justify-content-center mx-3">
+           <img data-aos="zoom-in" class="geis-imagem" src="{% static 'img/finalizadores/finalizadores-art.png' %}"
+               alt="imagem dos geis unique nail">
+        </div> 
+    </section>
+
 
 
     <!-- -------------------------- Cards -------------------------------- -->
@@ -21,24 +23,24 @@
 
         <!-- ---------------------- Card 2 ------------------------------- -->
         <div class="card-b">
-            <h6 class="titulo-blind">Cleanser Plus - 120ml</h6>
+            <h6 class="titulo-blind">Cleanser Plus</h6>
             <img class="blindagem-img" src="{% static 'img/higienizadores/cleanser-120-shadow.png' %}" alt="Cleanser Plus - Spray Unique Nail">
             <a href="{% url 'cleanser' %}"><img class="icone-mais" src="{% static 'img/blindagem/icone-mais.png' %}" alt="Ícone saiba mais"></a>
         </div>
 
         <!-- ---------------------- Card 2 ------------------------------- -->
         <div class="card-b">
-            <h6 class="titulo-blind">Top Coat - 10ml</h6>
+            <h6 class="titulo-blind">Top Coat</h6>
             <img class="blindagem-img" src="{% static 'img/blindagem/topcoat-shadow.png' %}" alt="Top Coat Unique Nail">
             <a href="{% url 'topCoat' %}"><img class="icone-mais" src="{% static 'img/blindagem/icone-mais.png' %}" alt="Ícone saiba mais"></a>
         </div>
 
         <!-- ---------------------- Card 3 ------------------------------- -->
-         <!-- <div class="card-b">
-            <h6 class="titulo-blind">Óleo Hidratante - 10ml</h6>
-            <img class="blindagem-img" src="{% static 'img/blindagem/essencialaranja-shadow.png' %}" alt="Óleo Hidratante Unique Nail">
-            <a><img class="icone-mais" src="{% static 'img/blindagem/icone-mais.png' %}" alt="Ícone de mais"></a>
-        </div>  -->
+        <div class="card-b">
+            <h6 class="titulo-blind">Óleo de Cutícula Laranja</h6>
+            <img class="blindagem-img" src="{% static 'img/finalizadores/essencialaranja-shadow.webp' %}" alt="Óleo Hidratante Unique Nail">
+            <a href="{% url 'oleodecuticula' %}"><img class="icone-mais" src="{% static 'img/blindagem/icone-mais.png' %}" alt="Ícone de mais"></a>
+        </div>
     </section>
 
 </main>

@@ -8,29 +8,28 @@
 
 	<!-- Parte Inicial da página -->
 	<div class="background">
-		<section class="introducao m-auto">
-			<div class="apresentacao px-3 m-auto">
-				<div data-aos="fade-right">
-					<h3 class="mt-4">Bem vindo ao maior site do Brasil relacionado ao universo das unhas.</h3>
-				</div>
-
-				<div data-aos="zoom-in" class="titulo1">
-					<h1>Unique Nail</h1>
-				</div>
-				<h2>A UNIQUE NAIL, apresenta uma nova geração de produtos para unhas, como o Gel Builder, que é o
-					primeiro gel Hipoalergênico de alta performance.</h2>
-				<a href="{% url 'sobre'  %}"
-					class="botao1 mt-5 b-kit align-items-center d-flex justify-content-center cor-botao">Saiba
-					Mais!</a>
-				<picture>
-					<source class="sede-unique-retrato" media="(max-width: 600px)"
-						srcset="/static/img/sede-unique-retrato.webp">
-					<img class="sede-unique" src="/static/img/sede-unique.webp" alt="Sede Unique Nail International">
-				</picture>
-
-			</div>
-
-		</section>
+		<div class="background-inicial">
+			<section class="introducao m-auto">
+				<div class="apresentacao px-3 m-auto">
+					<div data-aos="fade-right">
+						<h3 class="mt-4">Bem vindo ao maior site do Brasil relacionado ao universo das unhas.</h3>
+					</div>
+	
+					<div data-aos="zoom-in" class="titulo1">
+						<h1 class="titulo-preto">Unique Nail</h1>
+					</div>
+					<h2>A UNIQUE NAIL, apresenta uma nova geração de produtos para unhas, como o Gel Builder, que é o
+						primeiro gel Hipoalergênico de alta performance.</h2>
+					<a href="{% url 'sobre' %}"
+						class="botao1 mt-5 b-kit align-items-center d-flex justify-content-center cor-botao">Saiba
+						Mais!</a>
+					<picture>
+						<source class="sede-unique-retrato" media="(max-width: 600px)"
+							srcset="/static/img/sede-unique-retrato.webp">
+						<!-- <img class="sede-unique" src="/static/img/sede-unique.webp" alt="Sede Unique Nail International"> -->
+					</picture>
+			</section>
+		</div>
 
 		<!-- Galeria -->
 		<section class="galeria m-auto p-2">
@@ -69,7 +68,7 @@
 		</section>
 
 		<!-- Background de divisão -->
-		<div class="background-1"> <img src="/static/img/background-1.png" alt="Emenda"></div>
+		<div class="background-1"> <img src="/static/img/background-1.webp" alt="Emenda"></div>
 	</div>
 
 	<!-- Inicio Kit Iniciante -->
@@ -153,6 +152,11 @@
 				</div>
 			</article>
 		</section>
+	</div>
+
+	<!-- ----------------- Mapa -------------------- -->
+	<div class="mapa-unique">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3749.622703760195!2d-44.02956178458028!3d-19.982363345101234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6be71c22e8a53%3A0xa1333136470f515c!2sUnique%20Nail!5e0!3m2!1spt-BR!2sbr!4v1661799907793!5m2!1spt-BR!2sbr" width="3840" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 	</div>
 
 </main>

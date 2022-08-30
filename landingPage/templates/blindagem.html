@@ -7,12 +7,12 @@
 
 <main class="blindagem-corpo">
 
-    <!-- ---------------------- Paralaxee prep --------------------------- -->
-    <div class="paralaxe-blind">
-        <div class="inicio-blind">
-            <h1 class="titulo-blind-principal">Adesão, proteção e fortalecimento das unhas.</h1>
-        </div>
-    </div>
+    <section class="inicio-blindagem">
+        <div class="d-flex justify-content-center mx-3">
+           <img data-aos="zoom-in" class="geis-imagem" src="{% static 'img/blindagem/blindagem-art.png' %}"
+               alt="imagem dos geis unique nail">
+        </div> 
+   </section>
 
 
     <!-- -------------------------- Cards -------------------------------- -->
@@ -21,17 +21,39 @@
 
         <!-- ---------------------- Card 1 ------------------------------- -->
         <div class="card-b">
-            <h6 class="titulo-blind">Primer Adesivador - 10ml</h6>
-            <img class="blindagem-img" src="{% static 'img/blindagem/primeradesivador-shadow.png' %}" alt="Pimer Adesivador Unique Nail">
-            <a href="{% url 'primerAdesivador' %}"><img class="icone-mais" src="{% static 'img/blindagem/icone-mais.png' %}" alt="Ícone saiba mais"></a>
+            <h6 class="titulo-blind">Prep 10ml - Passo 1</h6>
+            <img class="blindagem-img" src="{% static 'img/blindagem/passo-1-shadow.webp' %}" alt="Prep 10ml Passo 1 - Unique Nail">
+            <a href="{% url 'passo1' %}"><img class="icone-mais" src="{% static 'img/blindagem/icone-mais.png' %}" alt="Ícone saiba mais"></a>
+        </div>
+
+        <!-- ---------------------- Card 2 ------------------------------- -->
+        <div class="card-b">
+            <h6 class="titulo-blind">Fuse 10ml - Passo 2</h6>
+            <img class="blindagem-img" src="{% static 'img/blindagem/passo-2-shadow.webp' %}" alt="Fuse 10ml Passo 2 - Unique Nail">
+            <a href="{% url 'passo2' %}"><img class="icone-mais" src="{% static 'img/blindagem/icone-mais.png' %}" alt="Ícone saiba mais"></a>
         </div>
 
         <!-- ---------------------- Card 3 ------------------------------- -->
-        <!-- <div class="card-b">
-            <h6 class="titulo-blind">Óleo Hidratante - 10ml</h6>
-            <img class="blindagem-img" src="{% static 'img/blindagem/essencialaranja-shadow.png' %}" alt="Óleo Hidratante Unique Nail">
-            <a><img class="icone-mais" src="{% static 'img/blindagem/icone-mais.png' %}" alt="Ícone de mais"></a>
-        </div> -->
+        <div class="card-b">
+            <h6 class="titulo-blind">Base 10ml - Passo 3</h6>
+            <img class="blindagem-img" src="{% static 'img/blindagem/passo-3-shadow.webp' %}" alt="Base 10ml Passo 3 - Unique Nail">
+            <a href="{% url 'passo3' %}"><img class="icone-mais" src="{% static 'img/blindagem/icone-mais.png' %}" alt="Ícone saiba mais"></a>
+        </div>
+    
+        <!-- ---------------------- Card 4 ------------------------------- -->
+        <div class="card-b">
+            <h6 class="titulo-blind">Top 10ml - Passo 5</h6>
+            <img class="blindagem-img" src="{% static 'img/blindagem/passo-5-shadow.webp' %}" alt="Top 10ml Passo 5 - Unique Nail">
+            <a href="{% url 'passo5' %}"><img class="icone-mais" src="{% static 'img/blindagem/icone-mais.png' %}" alt="Ícone saiba mais"></a>
+        </div>
+
+        <!-- ---------------------- Card 5 ------------------------------- -->
+        <div class="card-b">
+            <h6 class="titulo-blind">Kit Blindagem 4 Itens</h6>
+            <img class="blindagem-img pe-1" src="{% static 'img/blindagem/kit-blindagem-shadow.webp' %}" alt="Kit Blindagem 4 itens">
+            <a href="{% url 'kitblindagem' %}"><img class="icone-mais" src="{% static 'img/blindagem/icone-mais.png' %}" alt="Ícone saiba mais"></a>
+        </div>
+
     </section>
 
 </main>
