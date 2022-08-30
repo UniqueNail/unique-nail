@@ -104,14 +104,6 @@
 
 
 
-@media (max-width: 1920px) {
-    /* .inicio-geis {
-        background-image: url(/static/img/geis/background-folhas-1920.gif);
-        background-position: center;
-        background-repeat: no-repeat;
-    } */
-}
-
 @media (max-width: 1000px) {
     .titulo-geis {
         margin-top: 10px !important;
