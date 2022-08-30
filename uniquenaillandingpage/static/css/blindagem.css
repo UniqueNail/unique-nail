@@ -8,18 +8,6 @@
     font-size: 1.7rem;
 }
 
-.paralaxe-blind {
-    background-image: url("../img/blindagem/blindagem-inicio.jpg");
-    background-color: #f4f4f4;
-    min-height: 600px;
-    background-attachment: fixed;
-    background-position-X : center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .inicio-blind {
     max-width: 500px;
     background-color: rgba(0, 0, 0, 0.4);
